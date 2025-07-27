@@ -1,0 +1,46 @@
+{
+  "Lastest Products": [
+    {
+      "id": 1,
+      "name": "E-bike 8-10h",
+      "image": "/images/Product-images-beyond-bikes-product-one-crop (3).png",
+      "price": "$65.00 USD",
+      "oldPrice": "$70.00 USD"
+    },
+    {
+      "id": 2,
+      "name": "E-bike 6-8h",
+      "image": "/images/Cartoon-Cycle-remove-text.png",
+      "price": "$60.00 USD",
+      "oldPrice": "$65.00 USD"
+    },
+    {
+      "id": 3,
+      "name": "E-bike 10-12h",
+      "image": "/images/latest-ready-to-run-e-bike-red-removebg-preview-latest-one.png",
+      "price": "$70.00 USD",
+      "oldPrice": "$80.00 USD"
+    }
+    
+    
+  ],
+  "Top Rating": [
+    {
+      "id": 3,
+      "name": "Mountain Bike Pro",
+      "image": "/images/Product-images-beyond-bikes-product-one-crop (3).png",
+      "price": "$80.00 USD",
+      "oldPrice": "$90.00 USD"
+    }
+    
+  ],
+  "Best Sellers": [
+    {
+      "id": 5,
+      "name": "Speedster Road Bike",
+      "image": "/images/Product-images-beyond-bikes-product-one-crop (3).png",
+      "price": "$100.00 USD",
+      "oldPrice": "$120.00 USD"
+    }
+  ]
+}

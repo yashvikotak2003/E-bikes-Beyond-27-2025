@@ -1,0 +1,136 @@
+/* 
+header {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: transparent;
+  z-index: 1030; 
+}
+
+.transition-header.scrolled {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.set-header-text {
+  font-size: 12px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+
+button.btn-outline-light,
+button.btn-outline-dark {
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  nav ul.nav {
+    gap: 0.3rem;
+    padding: 10px 0;
+  }
+
+  nav ul.nav li.nav-item {
+    padding: 4px 0;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+} */
+
+/* Hide menu by default on small screens */
+/* @media (max-width: 767.98px) {
+  .main-header ul.nav {
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    padding: 1rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .main-header ul.nav li {
+    padding: 0.5rem 0;
+  }
+
+  .main-header ul.nav.d-none {
+    display: none !important;
+  }
+
+  .main-header ul.nav.d-block {
+    display: block !important;
+  }
+} */
+
+nav ul.nav li.nav-item a{
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+.main-header{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}  
+
+.set-logo-height{
+  height: 80px;
+  width: 100px;
+}
+
+@media (max-width: 767px) {
+  header .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-direction: row;
+  }
+  .menu-position{
+    position: absolute;
+    right: 0px;
+  }
+
+  .set-logo-height{
+  height: 50px;
+  width: 50px;
+}
+
+  nav ul.nav {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    /* padding: 1rem 0; */
+    margin: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  nav ul.nav.d-none {
+    display: none !important;
+  }
+
+  nav ul.nav.d-block {
+    display: block !important;
+  }
+
+  nav ul.nav li.nav-item {
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  
+
+  h1.fw-bold {
+    margin: 0;
+  }
+}
+
+

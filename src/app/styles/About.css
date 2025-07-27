@@ -1,0 +1,15 @@
+.aboutSection {
+  /* background-color: #0f0f0f; */
+  color: black;
+}
+
+.ovalImage {
+  width: 100%;
+  max-width: 500px;
+}
+
+.orangeHeading {
+  color: #f7931e;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}

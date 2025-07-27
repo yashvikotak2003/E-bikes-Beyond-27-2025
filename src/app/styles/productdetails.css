@@ -1,0 +1,56 @@
+.text-orange {
+  color: #f7931e;
+}
+
+.color-swatch {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.color-swatch.active {
+  border: 2px solid #000;
+}
+
+.thumb {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.thumb:hover {
+  transform: scale(1.05);
+}
+
+.accordion-button {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.accordion-item ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.table th {
+  width: 30%;
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.set-image-bikes{
+  height: 550px !important;
+  width: 600px !important;
+}
+
+@media (max-width: 767px) {
+  .set-image-bikes{
+  height: 350px !important;
+  width: 350px !important;
+}
+}
