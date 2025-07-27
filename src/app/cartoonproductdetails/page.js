@@ -268,7 +268,7 @@ export default function CartoonDetailsPage() {
                 <div className="d-flex justify-content-around">
                   <a target='_blank'  href="https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D" className="social-icon text-decoration-none"><i className="bi bi-instagram d-block text-center fs-3"></i>Instagram</a>
             <a target='_blank' href="https://g.co/kgs/66Atysa" className="social-icon text-decoration-none"><i className="bi bi-google d-block text-center fs-3"></i>Google</a>
-            <a target='_blank' href="tel:+919428291198" className="social-icon text-decoration-none" title="Call Us">
+            <a target='_blank' href="tel:+61422032961" className="social-icon text-decoration-none" title="Call Us">
   <i className="bi bi-telephone-fill d-block text-center fs-3"></i>Call
 </a>
                 </div>
