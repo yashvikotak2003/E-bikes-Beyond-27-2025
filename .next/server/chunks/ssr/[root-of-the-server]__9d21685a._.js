@@ -301,40 +301,10 @@ function Footer() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     target: "_blank",
-                                    className: "social-icon",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-facebook"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 12,
-                                        columnNumber: 56
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/Footer.js",
-                                    lineNumber: 12,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    target: "_blank",
-                                    className: "social-icon",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-pinterest"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 13,
-                                        columnNumber: 56
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/Footer.js",
-                                    lineNumber: 13,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    target: "_blank",
                                     href: "https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D",
                                     className: "social-icon",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-instagram"
+                                        className: "bi bi-instagram fs-3 me-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 14,
@@ -347,14 +317,14 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     target: "_blank",
-                                    href: "#",
+                                    href: "https://g.co/kgs/66Atysa",
                                     className: "social-icon",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-twitter-x"
+                                        className: "bi bi-google fs-3 me-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 15,
-                                        columnNumber: 65
+                                        columnNumber: 88
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Footer.js",
@@ -367,7 +337,7 @@ function Footer() {
                                     className: "social-icon",
                                     title: "Call Us",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-telephone-fill"
+                                        className: "bi bi-telephone-fill fs-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 17,

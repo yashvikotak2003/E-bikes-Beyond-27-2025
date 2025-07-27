@@ -7,6 +7,7 @@ import Image from 'next/image';
 import '../styles/productdetails.css'
 import Header from '../components/Header';
 import { useRouter } from 'next/navigation';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 
@@ -20,11 +21,38 @@ const images = {
 export default function ProductPage() {
   const [selectedColor, setSelectedColor] = useState('middle');
   const [quantity, setQuantity] = useState(1);
+  const [showModal, setShowModal] = useState(false);
   const router = useRouter();
 
   const handleAddToCart = () => {
     router.push('/rental'); // navigate to your cart page
     alert('sbhs')
+  };
+
+  const documentsForRent = [
+    'Name',
+    'Phone Number',
+    'Address & Unit Number',
+    'Email',
+    'Valid Visa Grant',
+    'Passport',
+  ];
+
+  const importantInformation = [
+    'Delivery bag',
+    'Locks (2)',
+    'Helmet',
+    'Charger',
+    'Basic maintenance',
+  ];
+
+  const handleClick = () => {
+    setShowModal(true);
+  };
+
+  // Function to close the modal
+  const handleClose = () => {
+    setShowModal(false);
   };
 
   useEffect(() => {
@@ -46,10 +74,10 @@ export default function ProductPage() {
       <div className="container py-5">
         <div className="row align-items-start">
           {/* Left Image */}
-          <div className="col-md-7 mb-4">
+          <div className="col-xl-7 mb-4">
             <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className='set-image-bikes'/>
 
-            <div className="d-flex mt-3 gap-3">
+            <div className="d-sm-flex mt-3 gap-3">
               {Object.keys(images).map(color => (
                 <Image
                   key={color}
@@ -57,7 +85,7 @@ export default function ProductPage() {
                   alt={color}
                   width={138}
                   height={120}
-                  className={`thumb ${selectedColor === color ? 'border border-dark' : ''}`}
+                  className={`thumb me-4 me-sm-0 mt-3 mt-sm-0 ${selectedColor === color ? 'border border-dark' : ''}`}
                   onClick={() => setSelectedColor(color)}
                 />
               ))}
@@ -65,15 +93,15 @@ export default function ProductPage() {
           </div>
 
           {/* Right Info */}
-          <div className="col-md-5">
-            <h1 className="text-orange fw-bold">Cali Cruiser</h1>
+          <div className="col-xl-5">
+            <h1 className="text-orange fw-bold">E-bike 8-10h</h1>
             {/* <small className="text-muted" style={{fontSize:'20px'}}>★ ★ ★ ☆ ☆ (3 Reviews)</small> */}
             <p className="mt-3">
               Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The City Surfer delivers unmatched performance you won’t find anywhere else.
             </p>
 
             <div className="fs-4 fw-bold">PRICE : $65 <del className="text-muted fs-4 ms-2">$70</del></div>
-            <div className="mt-5">
+            <div className="mt-3">
   <h5 className="fw-bold text-orange mb-3">Specifications</h5>
   <ul className="list-unstyled">
     <li className="mb-3">
@@ -113,6 +141,12 @@ export default function ProductPage() {
 
     <li className="mb-3">
       <strong>Braking System:</strong> Hydraulic disc brakes (optimized for high power engine).
+    </li>
+    <li className="mb-3">
+      <strong>Battery Hours:</strong> 8-10 hrs.
+    </li>
+    <li className="mb-3">
+      <strong>Battery Life:</strong> 48V 70A.
     </li>
   </ul>
 </div>
@@ -174,7 +208,154 @@ export default function ProductPage() {
     
     -
   </button> */}
-              <button className="btn" style={{background:'#f7931e'}} onClick={() =>router.push('/rental')}><i className="bi bi-cart text-light me-2" aria-label="cart"></i><span className='text-light'>Rental</span></button>
+              {/* <button className="btn" style={{background:'#f7931e'}} onClick={() =>router.push('/rental')}><i className="bi bi-bike text-light me-2" aria-label="bike"></i><span className='text-light'>Rental</span></button> */}
+              <button 
+        className="btn" 
+        style={{ background: '#f7931e' }} 
+        onClick={handleClick}
+      >
+        <i className="bi bi-bike text-light me-2" aria-label="bike"></i>
+        <span className="text-light">Rental</span>
+      </button>
+
+      {/* {showModal && (
+        <div className="modal fade show" style={{ display: 'block' }} aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div className="modal-dialog">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">Social Media Links</h5>
+                <button type="button" className="btn-close" onClick={handleClose} aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                
+                <div className="d-flex justify-content-around">
+                  <div className="text-center">
+                    <i className="bi bi-instagram" style={{ fontSize: '2rem' }}></i>
+                    <div>Instagram</div>
+                  </div>
+                  <div className="text-center">
+                    <i className="bi bi-google" style={{ fontSize: '2rem' }}></i>
+                    <div>Google</div>
+                  </div>
+                  <div className="text-center">
+                    <i className="bi bi-telephone" style={{ fontSize: '2rem' }}></i>
+                    <div>Call</div>
+                  </div>
+                </div>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={handleClose}>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )} */}
+      {/* {showModal && (
+        <div 
+          className="modal fade show" 
+          style={{ display: 'block', opacity: 1, transition: 'opacity 0.3s ease' }} 
+          aria-labelledby="exampleModalLabel" 
+          aria-hidden="true"
+        >
+          <div 
+            className="modal-dialog" 
+            style={{ 
+              display: 'flex', 
+              justifyContent: 'center', 
+              alignItems: 'center', 
+              minHeight: '100vh' 
+            }}
+          >
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">Social Media Links</h5>
+                <button type="button" className="btn-close" onClick={handleClose} aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                
+                <div className="d-flex justify-content-around">
+                  <div className="text-center">
+                    <i className="bi bi-instagram" style={{ fontSize: '2rem' }}></i>
+                    <div>Instagram</div>
+                  </div>
+                  <div className="text-center">
+                    <i className="bi bi-google" style={{ fontSize: '2rem' }}></i>
+                    <div>Google</div>
+                  </div>
+                  <div className="text-center">
+                    <i className="bi bi-telephone" style={{ fontSize: '2rem' }}></i>
+                    <div>Call</div>
+                  </div>
+                </div>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" onClick={handleClose}>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )} */}
+
+      {showModal && (
+        <div
+          className="modal fade show"
+          style={{
+            display: 'block',
+            opacity: 1,
+            transition: 'opacity 0.3s ease',
+          }}
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          {/* Modal backdrop with blur effect */}
+          <div
+            className="modal-backdrop fade show"
+            style={{
+              backdropFilter: 'blur(5px)',  // Apply blur effect to the background
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: -1,  // Make sure the backdrop is behind the modal
+              backgroundColor: 'rgba(0, 0, 0, 0.8)', // Semi-transparent background
+            }}
+          ></div>
+
+          <div
+            className="modal-dialog"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              minHeight: '100vh',
+            }}
+          >
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title" id="exampleModalLabel">Social Media Links</h5>
+                <button type="button" className="btn-close" onClick={handleClose} aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                {/* Icons and Labels for Instagram, Google, and Call */}
+                <div className="d-flex justify-content-around">
+                  <a target='_blank'  href="https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D" className="social-icon text-decoration-none"><i className="bi bi-instagram d-block text-center fs-3"></i>Instagram</a>
+            <a target='_blank' href="https://g.co/kgs/66Atysa" className="social-icon text-decoration-none"><i className="bi bi-google d-block text-center fs-3"></i>Google</a>
+            <a target='_blank' href="tel:+919428291198" className="social-icon text-decoration-none" title="Call Us">
+  <i className="bi bi-telephone-fill d-block text-center fs-3"></i>Call
+</a>
+                </div>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn" style={{background:'#f7931e',color:'white'}} onClick={handleClose}>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+
+      
             </div>
 
             {/* <div className="mt-3">
@@ -184,38 +365,77 @@ export default function ProductPage() {
         </div>
       </div>
       <div className="container text-center py-5">
-        <ul className="nav nav-tabs justify-content-center border-0 mb-4">
-          <li className="nav-item">
-            <a className="nav-link active fw-bold" aria-current="page" href="#">Description</a>
-          </li>
-          <li className="nav-item">
+        {/* <ul className="nav nav-tabs justify-content-center border-0 mb-4"> */}
+          {/* <li className="nav-item"> */}
+            <h1 className="fw-bold" aria-current="page" href="#">Description</h1>
+            <h2>No Insurance Offered</h2>
+            <h3>E-bikes does not offer Insurance services.</h3>
+            <h4>Please make your own arrangemants if needed.</h4>
+          {/* </li> */}
+          {/* <li className="nav-item">
             <a className="nav-link text-muted" href="#">Additional information</a>
           </li>
           <li className="nav-item">
             <a className="nav-link text-muted" href="#">Reviews (1)</a>
-          </li>
-        </ul>
+          </li> */}
+        {/* </ul> */}
 
-        <h2 className="fw-bold display-5">Conquer the city streets or <br /><span className="text-secondary">the mountain trails</span></h2>
-        <p className="mt-3 fs-5 text-muted px-2 px-md-5">
-         The MK220 new generation 20 Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trip is distance and 10% more of the gradeability and 10% less of its weight than our old generation .  </p>
+        {/* <h2 className="fw-bold display-5">Conquer the city streets or <br /><span className="text-secondary">the mountain trails</span></h2> */}
+        <div style={{ padding: '20px' }}>
+      <h2 className='mb-4' style={{ textAlign: 'center' }}>Rental Information</h2>
+      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+        {/* Documents for Rent Table */}
+        <table style={{ width: '48%', margin: '0 10px', padding:'10px', textAlign: 'left',borderRadius:'10px' }}>
+          <thead>
+            <tr>
+              <th>Documents for Rent</th>
+            </tr>
+          </thead>
+          <tbody>
+            {documentsForRent.map((item, index) => (
+              <tr key={index}>
+                <td>{index + 1}. {item}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
-        <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
-          <div className="col">
+        {/* Important Information Table */}
+        <table style={{ width: '48%', margin: '0 10px', textAlign: 'left' }}>
+          <thead>
+            <tr>
+              <th>Our rental fee includes</th>
+            </tr>
+          </thead>
+          <tbody>
+            {importantInformation.map((item, index) => (
+              <tr key={index}>
+                <td>{index + 1}. {item}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+        {/* <p className="mt-3 fs-5 text-muted px-2 px-md-5">
+         The MK220 new generation 20 Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trip is distance and 10% more of the gradeability and 10% less of its weight than our old generation .  </p> */}
+
+        <div className="row g-4 mt-5">
+          <div className="col-md-4">
             <div className="border rounded py-4 px-2 h-100">
               <Image src="/images/speed.svg" alt="Top Speed" width={40} height={40} />
               <p className="text-muted mb-1 mt-3 small">Top Speed</p>
               <h5 className="text-orange fw-bold">45 MPH</h5>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-4">
             <div className="border rounded py-4 px-2 h-100">
               <Image src="/images/running.svg" alt="Average Miles" width={40} height={40} />
               <p className="text-muted mb-1 mt-3 small">Battery Hours</p>
               <h5 className="text-orange fw-bold">8-10 hrs</h5>
             </div>
           </div>
-          <div className="col">
+          <div className="col-md-4">
             <div className="border rounded py-4 px-2 h-100">
               <Image src="/images/battery.svg" alt="Battery Life" width={40} height={40} />
               <p className="text-muted mb-1 mt-3 small">Battery Life</p>

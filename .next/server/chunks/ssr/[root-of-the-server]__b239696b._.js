@@ -296,6 +296,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navi
 ;
 ;
 ;
+;
 const images = {
     front: '/images/CartoonCycleProductdetailsFrontBlur.jpg',
     back: '/images/CartoonCycleProductdetailsBackBlur.jpg',
@@ -306,10 +307,33 @@ function CartoonDetailsPage() {
     const [selectedColor, setSelectedColor] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('front');
     const [quantity, setQuantity] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(1);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [showModal, setShowModal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     // const handleAddToCart = () => {
     //   router.push('/rental'); // navigate to your cart page
     //   alert('sbhs')
     // };
+    const documentsForRent = [
+        'Name',
+        'Phone Number',
+        'Address & Unit Number',
+        'Email',
+        'Valid Visa Grant',
+        'Passport'
+    ];
+    const importantInformation = [
+        'Delivery bag',
+        'Locks (2)',
+        'Helmet',
+        'Charger',
+        'Basic maintenance'
+    ];
+    const handleClick = ()=>{
+        setShowModal(true);
+    };
+    // Function to close the modal
+    const handleClose = ()=>{
+        setShowModal(false);
+    };
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         // Ensures Bootstrap's JS is loaded once
         __turbopack_context__.r("[project]/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js [app-ssr] (ecmascript, async loader)")(__turbopack_context__.i);
@@ -322,7 +346,7 @@ function CartoonDetailsPage() {
                         children: "Cartoon Bikes | Electric Bike"
                     }, void 0, false, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 38,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -330,7 +354,7 @@ function CartoonDetailsPage() {
                         content: "Buy Cali Cruiser – a powerful all-terrain mid-drive electric bicycle for both trails and city roads. Available now!"
                     }, void 0, false, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 39,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -338,7 +362,7 @@ function CartoonDetailsPage() {
                         content: "electric bike, e-bike, Cali Cruiser, green transport"
                     }, void 0, false, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 40,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -346,7 +370,7 @@ function CartoonDetailsPage() {
                         content: "index, follow"
                     }, void 0, false, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 41,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
@@ -354,18 +378,18 @@ function CartoonDetailsPage() {
                         href: "https://yourdomain.com/product"
                     }, void 0, false, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 42,
+                        lineNumber: 70,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                lineNumber: 37,
+                lineNumber: 65,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Header$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                lineNumber: 45,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -374,7 +398,7 @@ function CartoonDetailsPage() {
                     className: "row align-items-start",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "col-md-7 mb-4",
+                            className: "col-xl-7 mb-4",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     src: images[selectedColor],
@@ -384,80 +408,72 @@ function CartoonDetailsPage() {
                                     className: "set-image-bikes"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 50,
+                                    lineNumber: 78,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "d-flex mt-3 gap-3",
+                                    className: "d-sm-flex mt-3 gap-3",
                                     children: Object.keys(images).map((color)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                             src: images[color],
                                             alt: color,
                                             width: 138,
                                             height: 120,
-                                            className: `thumb ${selectedColor === color ? 'border border-dark' : ''}`,
+                                            className: `thumb me-4 me-sm-0 mt-3 mt-sm-0 ${selectedColor === color ? 'border border-dark' : ''}`,
                                             onClick: ()=>setSelectedColor(color)
                                         }, color, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 54,
+                                            lineNumber: 82,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 52,
+                                    lineNumber: 80,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                            lineNumber: 49,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "col-md-5",
+                            className: "col-xl-5",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                     className: "text-orange fw-bold",
-                                    children: "Cartoon Bikes"
+                                    children: "E-bike 6-8h"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 69,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "mt-3",
-                                    children: "Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The City Surfer delivers unmatched performance you won’t find anywhere else."
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 71,
+                                    lineNumber: 97,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "fs-4 fw-bold",
                                     children: [
-                                        "PRICE : $65 ",
+                                        "PRICE : $60 ",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("del", {
                                             className: "text-muted fs-4 ms-2",
                                             children: "$70"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 75,
+                                            lineNumber: 103,
                                             columnNumber: 55
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 75,
+                                    lineNumber: 103,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "mt-5",
+                                    className: "mt-3",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
                                             className: "fw-bold text-orange mb-3",
                                             children: "Specifications"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 77,
+                                            lineNumber: 105,
                                             columnNumber: 3
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -470,7 +486,7 @@ function CartoonDetailsPage() {
                                                             children: "Speed Modes:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 80,
+                                                            lineNumber: 108,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -480,33 +496,33 @@ function CartoonDetailsPage() {
                                                                     children: "Gear 1: 25 km/h"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 82,
+                                                                    lineNumber: 110,
                                                                     columnNumber: 9
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Gear 2: 35 km/h"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 83,
+                                                                    lineNumber: 111,
                                                                     columnNumber: 9
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Gear 3: 45 km/h"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 84,
+                                                                    lineNumber: 112,
                                                                     columnNumber: 9
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 81,
+                                                            lineNumber: 109,
                                                             columnNumber: 7
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                    lineNumber: 79,
+                                                    lineNumber: 107,
                                                     columnNumber: 5
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -516,14 +532,14 @@ function CartoonDetailsPage() {
                                                             children: "Display:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 89,
+                                                            lineNumber: 117,
                                                             columnNumber: 7
                                                         }, this),
                                                         " Multifunctional LED display, clearly visible under sunlight."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                    lineNumber: 88,
+                                                    lineNumber: 116,
                                                     columnNumber: 5
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -533,7 +549,7 @@ function CartoonDetailsPage() {
                                                             children: "Lighting:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 93,
+                                                            lineNumber: 121,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -543,40 +559,40 @@ function CartoonDetailsPage() {
                                                                     children: "Front high-brightness headlight with wide aperture"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 95,
+                                                                    lineNumber: 123,
                                                                     columnNumber: 9
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Rear light with laser projection for night safety"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 96,
+                                                                    lineNumber: 124,
                                                                     columnNumber: 9
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Front and rear indicators"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 97,
+                                                                    lineNumber: 125,
                                                                     columnNumber: 9
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "Breathing light strips on frame and rear rack"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 98,
+                                                                    lineNumber: 126,
                                                                     columnNumber: 9
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 94,
+                                                            lineNumber: 122,
                                                             columnNumber: 7
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                    lineNumber: 92,
+                                                    lineNumber: 120,
                                                     columnNumber: 5
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -586,14 +602,14 @@ function CartoonDetailsPage() {
                                                             children: "Phone Holder:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 103,
+                                                            lineNumber: 131,
                                                             columnNumber: 7
                                                         }, this),
                                                         " Comes with USB port (2.1A output) — no need for a power bank."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                    lineNumber: 102,
+                                                    lineNumber: 130,
                                                     columnNumber: 5
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -603,7 +619,7 @@ function CartoonDetailsPage() {
                                                             children: "Safety System:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 107,
+                                                            lineNumber: 135,
                                                             columnNumber: 7
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -613,26 +629,26 @@ function CartoonDetailsPage() {
                                                                     children: "Smart anti-theft remote (alarm + keyless start)"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 109,
+                                                                    lineNumber: 137,
                                                                     columnNumber: 9
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                                     children: "NFC smart unlock feature"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                                    lineNumber: 110,
+                                                                    lineNumber: 138,
                                                                     columnNumber: 9
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 108,
+                                                            lineNumber: 136,
                                                             columnNumber: 7
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                    lineNumber: 106,
+                                                    lineNumber: 134,
                                                     columnNumber: 5
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -642,26 +658,60 @@ function CartoonDetailsPage() {
                                                             children: "Braking System:"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                            lineNumber: 115,
+                                                            lineNumber: 143,
                                                             columnNumber: 7
                                                         }, this),
                                                         " Hydraulic disc brakes (optimized for high power engine)."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                                    lineNumber: 114,
+                                                    lineNumber: 142,
+                                                    columnNumber: 5
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "mb-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                            children: "Battery Hours:"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                            lineNumber: 146,
+                                                            columnNumber: 7
+                                                        }, this),
+                                                        " 6-8 hours"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                    lineNumber: 145,
+                                                    columnNumber: 5
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                    className: "mb-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                                            children: "Battery Life:"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                            lineNumber: 149,
+                                                            columnNumber: 7
+                                                        }, this),
+                                                        " 48V 50A"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                    lineNumber: 148,
                                                     columnNumber: 5
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 78,
+                                            lineNumber: 106,
                                             columnNumber: 3
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 76,
+                                    lineNumber: 104,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -669,144 +719,410 @@ function CartoonDetailsPage() {
                                     style: {
                                         background: '#f7931e'
                                     },
-                                    onClick: ()=>router.push('/rental'),
+                                    onClick: handleClick,
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                            className: "bi bi-cart text-light me-2",
-                                            "aria-label": "cart"
+                                            className: "bi bi-bike text-light me-2",
+                                            "aria-label": "bike"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 183,
-                                            columnNumber: 106
+                                            lineNumber: 223,
+                                            columnNumber: 9
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "text-light",
                                             children: "Rental"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 183,
-                                            columnNumber: 171
+                                            lineNumber: 224,
+                                            columnNumber: 9
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 183,
+                                    lineNumber: 218,
                                     columnNumber: 13
+                                }, this),
+                                showModal && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "modal fade show",
+                                    style: {
+                                        display: 'block',
+                                        opacity: 1,
+                                        transition: 'opacity 0.3s ease'
+                                    },
+                                    "aria-labelledby": "exampleModalLabel",
+                                    "aria-hidden": "true",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "modal-backdrop fade show",
+                                            style: {
+                                                backdropFilter: 'blur(5px)',
+                                                position: 'fixed',
+                                                top: 0,
+                                                left: 0,
+                                                right: 0,
+                                                bottom: 0,
+                                                zIndex: -1,
+                                                backgroundColor: 'rgba(0, 0, 0, 0.8)'
+                                            }
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                            lineNumber: 238,
+                                            columnNumber: 11
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "modal-dialog",
+                                            style: {
+                                                display: 'flex',
+                                                justifyContent: 'center',
+                                                alignItems: 'center',
+                                                minHeight: '100vh'
+                                            },
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "modal-content",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "modal-header",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                                className: "modal-title",
+                                                                id: "exampleModalLabel",
+                                                                children: "Social Media Links"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                lineNumber: 263,
+                                                                columnNumber: 17
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                                type: "button",
+                                                                className: "btn-close",
+                                                                onClick: handleClose,
+                                                                "aria-label": "Close"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                lineNumber: 264,
+                                                                columnNumber: 17
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                        lineNumber: 262,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "modal-body",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "d-flex justify-content-around",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                    target: "_blank",
+                                                                    href: "https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D",
+                                                                    className: "social-icon text-decoration-none",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "bi bi-instagram d-block text-center fs-3"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                            lineNumber: 269,
+                                                                            columnNumber: 164
+                                                                        }, this),
+                                                                        "Instagram"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                    lineNumber: 269,
+                                                                    columnNumber: 19
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                    target: "_blank",
+                                                                    href: "https://g.co/kgs/66Atysa",
+                                                                    className: "social-icon text-decoration-none",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "bi bi-google d-block text-center fs-3"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                            lineNumber: 270,
+                                                                            columnNumber: 109
+                                                                        }, this),
+                                                                        "Google"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                    lineNumber: 270,
+                                                                    columnNumber: 13
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                    target: "_blank",
+                                                                    href: "tel:+919428291198",
+                                                                    className: "social-icon text-decoration-none",
+                                                                    title: "Call Us",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+                                                                            className: "bi bi-telephone-fill d-block text-center fs-3"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                            lineNumber: 272,
+                                                                            columnNumber: 3
+                                                                        }, this),
+                                                                        "Call"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                                    lineNumber: 271,
+                                                                    columnNumber: 13
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                            lineNumber: 268,
+                                                            columnNumber: 17
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                        lineNumber: 266,
+                                                        columnNumber: 15
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "modal-footer",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            type: "button",
+                                                            className: "btn",
+                                                            style: {
+                                                                background: '#f7931e',
+                                                                color: 'white'
+                                                            },
+                                                            onClick: handleClose,
+                                                            children: "Close"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                            lineNumber: 277,
+                                                            columnNumber: 17
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                        lineNumber: 276,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                lineNumber: 261,
+                                                columnNumber: 13
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                            lineNumber: 252,
+                                            columnNumber: 11
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                    lineNumber: 227,
+                                    columnNumber: 9
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                            lineNumber: 68,
+                            lineNumber: 96,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                    lineNumber: 47,
+                    lineNumber: 75,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                lineNumber: 46,
+                lineNumber: 74,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "container text-center py-5",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                        className: "nav nav-tabs justify-content-center border-0 mb-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    className: "nav-link active fw-bold",
-                                    "aria-current": "page",
-                                    href: "#",
-                                    children: "Description"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 190,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 189,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    className: "nav-link text-muted",
-                                    href: "#",
-                                    children: "Additional information"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 193,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 192,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                className: "nav-item",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    className: "nav-link text-muted",
-                                    href: "#",
-                                    children: "Reviews (1)"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 196,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 195,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "fw-bold",
+                        "aria-current": "page",
+                        href: "#",
+                        children: "Description"
+                    }, void 0, false, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 188,
+                        lineNumber: 298,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "fw-bold display-5",
+                        children: "No Insurance Offered"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                        lineNumber: 299,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                        children: "E-bikes does not offer Insurance services."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                        lineNumber: 300,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                        children: "Please make your own arrangemants if needed."
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                        lineNumber: 301,
+                        columnNumber: 13
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        style: {
+                            padding: '20px'
+                        },
                         children: [
-                            "Conquer the city streets or ",
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
-                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 200,
-                                columnNumber: 71
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "text-secondary",
-                                children: "the mountain trails"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "mb-4",
+                                style: {
+                                    textAlign: 'center'
+                                },
+                                children: "Rental Information"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 200,
-                                columnNumber: 77
+                                lineNumber: 308,
+                                columnNumber: 7
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                style: {
+                                    display: 'flex',
+                                    justifyContent: 'space-around'
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                                        style: {
+                                            width: '48%',
+                                            margin: '0 10px',
+                                            padding: '10px',
+                                            textAlign: 'left',
+                                            borderRadius: '10px'
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                        children: "Documents for Rent"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                        lineNumber: 314,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                    lineNumber: 313,
+                                                    columnNumber: 13
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                lineNumber: 312,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                                                children: documentsForRent.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                            children: [
+                                                                index + 1,
+                                                                ". ",
+                                                                item
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                            lineNumber: 320,
+                                                            columnNumber: 17
+                                                        }, this)
+                                                    }, index, false, {
+                                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                        lineNumber: 319,
+                                                        columnNumber: 15
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                lineNumber: 317,
+                                                columnNumber: 11
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                        lineNumber: 311,
+                                        columnNumber: 9
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                                        style: {
+                                            width: '48%',
+                                            margin: '0 10px',
+                                            textAlign: 'left'
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                        children: "Our rental fee includes"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                        lineNumber: 330,
+                                                        columnNumber: 15
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                    lineNumber: 329,
+                                                    columnNumber: 13
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                lineNumber: 328,
+                                                columnNumber: 11
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                                                children: importantInformation.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                            children: [
+                                                                index + 1,
+                                                                ". ",
+                                                                item
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                            lineNumber: 336,
+                                                            columnNumber: 17
+                                                        }, this)
+                                                    }, index, false, {
+                                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                        lineNumber: 335,
+                                                        columnNumber: 15
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                                lineNumber: 333,
+                                                columnNumber: 11
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                        lineNumber: 327,
+                                        columnNumber: 9
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
+                                lineNumber: 309,
+                                columnNumber: 7
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 200,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "mt-3 fs-5 text-muted px-2 px-md-5",
-                        children: "The MK220 new generation 20\"  Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trip's distance and 10% more of the gradeability and 10% less of its weight than our old generation ."
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 201,
-                        columnNumber: 9
+                        lineNumber: 307,
+                        columnNumber: 10
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "row row-cols-1 row-cols-md-4 g-4 mt-5",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col",
+                                className: "col-md-4",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "border rounded py-4 px-2 h-100",
                                     children: [
@@ -817,7 +1133,7 @@ function CartoonDetailsPage() {
                                             height: 40
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 208,
+                                            lineNumber: 347,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -825,7 +1141,7 @@ function CartoonDetailsPage() {
                                             children: "Top Speed"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 209,
+                                            lineNumber: 348,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -833,22 +1149,22 @@ function CartoonDetailsPage() {
                                             children: "45 MPH"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 210,
+                                            lineNumber: 349,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 207,
+                                    lineNumber: 346,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 206,
+                                lineNumber: 345,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col",
+                                className: "col-md-4",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "border rounded py-4 px-2 h-100",
                                     children: [
@@ -859,7 +1175,7 @@ function CartoonDetailsPage() {
                                             height: 40
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 215,
+                                            lineNumber: 354,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -867,7 +1183,7 @@ function CartoonDetailsPage() {
                                             children: "Battery Hour"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 216,
+                                            lineNumber: 355,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -875,22 +1191,22 @@ function CartoonDetailsPage() {
                                             children: "6-8 hours"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 217,
+                                            lineNumber: 356,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 214,
+                                    lineNumber: 353,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 213,
+                                lineNumber: 352,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col",
+                                className: "col-md-4",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "border rounded py-4 px-2 h-100",
                                     children: [
@@ -901,7 +1217,7 @@ function CartoonDetailsPage() {
                                             height: 40
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 222,
+                                            lineNumber: 361,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -909,7 +1225,7 @@ function CartoonDetailsPage() {
                                             children: "Battery Life"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 223,
+                                            lineNumber: 362,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
@@ -917,72 +1233,30 @@ function CartoonDetailsPage() {
                                             children: "48V 50A"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 224,
+                                            lineNumber: 363,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 221,
+                                    lineNumber: 360,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 220,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "col",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "border rounded py-4 px-2 h-100",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                            src: "/images/motor.svg",
-                                            alt: "Motor Output",
-                                            width: 40,
-                                            height: 40
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 229,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-muted mb-1 mt-3 small",
-                                            children: "Motor Output"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 230,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
-                                            className: "text-orange fw-bold",
-                                            children: "5,000 Watts"
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                            lineNumber: 231,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                    lineNumber: 228,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                                lineNumber: 227,
+                                lineNumber: 359,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                        lineNumber: 205,
+                        lineNumber: 344,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/cartoonproductdetails/page.js",
-                lineNumber: 187,
+                lineNumber: 286,
                 columnNumber: 7
             }, this)
         ]

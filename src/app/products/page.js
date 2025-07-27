@@ -229,9 +229,9 @@ export default function ProductTabs() {
     style={{cursor: 'pointer'}}
     itemProp="image"
     onClick={() =>
-    product.name === 'Cartoon Bike'
+    product.name === 'E-bike 6-8h'
   ? router.push('/cartoonproductdetails')
-  : product.name === 'Latest Red Bike'
+  : product.name === 'E-bike 10-12h'
   ? router.push('/latestredproductdetails')
   : router.push('/productdetails')
 
@@ -256,7 +256,7 @@ export default function ProductTabs() {
     </button>
   </div> */}
 
-  <h3 className="product-title mt-3" itemProp="name">{product.name}</h3>
+  <h1 className="product-title mt-3" itemProp="name">{product.name}</h1>
   <p className="product-price" itemProp="offers" itemScope itemType="https://schema.org/Offer">
     <span itemProp="price">{product.price}</span>
     <meta itemProp="priceCurrency" content="USD" />

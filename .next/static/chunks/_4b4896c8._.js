@@ -364,40 +364,10 @@ function Footer() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     target: "_blank",
-                                    className: "social-icon",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-facebook"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 12,
-                                        columnNumber: 56
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/Footer.js",
-                                    lineNumber: 12,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    target: "_blank",
-                                    className: "social-icon",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-pinterest"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 13,
-                                        columnNumber: 56
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/Footer.js",
-                                    lineNumber: 13,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    target: "_blank",
                                     href: "https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D",
                                     className: "social-icon",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-instagram"
+                                        className: "bi bi-instagram fs-3 me-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 14,
@@ -410,14 +380,14 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     target: "_blank",
-                                    href: "#",
+                                    href: "https://g.co/kgs/66Atysa",
                                     className: "social-icon",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-twitter-x"
+                                        className: "bi bi-google fs-3 me-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 15,
-                                        columnNumber: 65
+                                        columnNumber: 88
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Footer.js",
@@ -430,7 +400,7 @@ function Footer() {
                                     className: "social-icon",
                                     title: "Call Us",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-telephone-fill"
+                                        className: "bi bi-telephone-fill fs-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 17,
@@ -614,7 +584,7 @@ var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_
 // import aboutImg1 from '../../../public/images/ridinghapply.jpg'; 
 // import '../styles/About.css';
 // import Header from '../components/Header';
-// export default function About() {
+// export default function About() {dhs
 //   return (
 //     <>
 //       <Head>
@@ -830,7 +800,7 @@ function About() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "Beyond Bikes offers reliable and affordable electric bike rentals designed for both everyday riders and food delivery professionals in Melbourne. Whether you're exploring the city or delivering with Uber Eats or DoorDash, our e-bikes provide the perfect blend of power, comfort, and efficiency. We understand the needs of urban commuters - that’s why our bikes are built for performance, long battery life, and convenience. “Freedom to Explore, Power to Move” - that’s the promise we ride on. With flexible rental options, quick support, and service across Melbourne, Beyond Bikes is your go-to for hassle-free electric mobility."
+                                                children: "Beyond Bikes offers reliable and affordable electric bike rentals designed for both everyday riders and food delivery professionals in Melbourne. Whether you are exploring the city or delivering with Uber Eats or DoorDash, our e-bikes provide the perfect blend of power, comfort, and efficiency. We understand the needs of urban commuters - that’s why our bikes are built for performance, long battery life, and convenience. “Freedom to Explore, Power to Move” - that’s the promise we ride on. With flexible rental options, quick support, and service across Melbourne, Beyond Bikes is your go-to for hassle-free electric mobility."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.js",
                                                 lineNumber: 138,
@@ -863,25 +833,10 @@ function About() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "At Beyond Bikes PTY LTD, we believe that exceptional service starts with passionate people..."
+                                                children: "At Beyond Bikes PTY LTD, we believe that exceptional service starts with passionate people We offer a carefully curated range of electric bikes and accessories. We’re proud of our roots — and even more excited about where we’re going.And Deleivery Freedom at any place without any battery issue."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.js",
                                                 lineNumber: 149,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "We offer a carefully curated range of electric bikes and accessories..."
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.js",
-                                                lineNumber: 152,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "fw-600",
-                                                children: "We’re proud of our roots — and even more excited about where we’re going."
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/app/about/page.js",
-                                                lineNumber: 155,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -900,12 +855,12 @@ function About() {
                                             height: 400
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 158,
+                                            lineNumber: 159,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 157,
+                                        lineNumber: 158,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -928,7 +883,7 @@ function About() {
             }, this),
             pathname === '/about' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 192,
+                lineNumber: 193,
                 columnNumber: 33
             }, this)
         ]

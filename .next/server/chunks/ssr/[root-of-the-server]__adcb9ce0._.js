@@ -36,7 +36,7 @@ module.exports = mod;
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$65.00 USD\",\"oldPrice\":\"$70.00 USD\"},{\"id\":2,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text.png\",\"price\":\"$60.00 USD\",\"oldPrice\":\"$65.00 USD\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/latest-ready-to-run-e-bike-red-removebg-preview-latest-one.png\",\"price\":\"$70.00 USD\",\"oldPrice\":\"$80.00 USD\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 USD\",\"oldPrice\":\"$90.00 USD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 USD\",\"oldPrice\":\"$120.00 USD\"}]}"));}}),
+__turbopack_context__.v(JSON.parse("{\"Lastest Products\":[{\"id\":1,\"name\":\"E-bike 6-8h\",\"image\":\"/images/Cartoon-Cycle-remove-text.png\",\"price\":\"$60.00 USD\",\"oldPrice\":\"$65.00 USD\"},{\"id\":2,\"name\":\"E-bike 8-10h\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$65.00 USD\",\"oldPrice\":\"$70.00 USD\"},{\"id\":3,\"name\":\"E-bike 10-12h\",\"image\":\"/images/latest-ready-to-run-e-bike-red-removebg-preview-latest-one.png\",\"price\":\"$70.00 USD\",\"oldPrice\":\"$80.00 USD\"}],\"Top Rating\":[{\"id\":3,\"name\":\"Mountain Bike Pro\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$80.00 USD\",\"oldPrice\":\"$90.00 USD\"}],\"Best Sellers\":[{\"id\":5,\"name\":\"Speedster Road Bike\",\"image\":\"/images/Product-images-beyond-bikes-product-one-crop (3).png\",\"price\":\"$100.00 USD\",\"oldPrice\":\"$120.00 USD\"}]}"));}}),
 "[project]/src/app/json/categories.json (json)": ((__turbopack_context__) => {
 
 var { g: global, __dirname } = __turbopack_context__;
@@ -725,40 +725,10 @@ function Footer() {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     target: "_blank",
-                                    className: "social-icon",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-facebook"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 12,
-                                        columnNumber: 56
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/Footer.js",
-                                    lineNumber: 12,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    target: "_blank",
-                                    className: "social-icon",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-pinterest"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/components/Footer.js",
-                                        lineNumber: 13,
-                                        columnNumber: 56
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/components/Footer.js",
-                                    lineNumber: 13,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    target: "_blank",
                                     href: "https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D",
                                     className: "social-icon",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-instagram"
+                                        className: "bi bi-instagram fs-3 me-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 14,
@@ -771,14 +741,14 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     target: "_blank",
-                                    href: "#",
+                                    href: "https://g.co/kgs/66Atysa",
                                     className: "social-icon",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-twitter-x"
+                                        className: "bi bi-google fs-3 me-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 15,
-                                        columnNumber: 65
+                                        columnNumber: 88
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/components/Footer.js",
@@ -791,7 +761,7 @@ function Footer() {
                                     className: "social-icon",
                                     title: "Call Us",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-                                        className: "bi bi-telephone-fill"
+                                        className: "bi bi-telephone-fill fs-3"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/components/Footer.js",
                                         lineNumber: 17,
@@ -1177,13 +1147,13 @@ function ProductTabs() {
                                                 cursor: 'pointer'
                                             },
                                             itemProp: "image",
-                                            onClick: ()=>product.name === 'Cartoon Bike' ? router.push('/cartoonproductdetails') : product.name === 'Latest Red Bike' ? router.push('/latestredproductdetails') : router.push('/productdetails')
+                                            onClick: ()=>product.name === 'E-bike 6-8h' ? router.push('/cartoonproductdetails') : product.name === 'E-bike 10-12h' ? router.push('/latestredproductdetails') : router.push('/productdetails')
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/products/page.js",
                                             lineNumber: 224,
                                             columnNumber: 3
                                         }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                                             className: "product-title mt-3",
                                             itemProp: "name",
                                             children: product.name

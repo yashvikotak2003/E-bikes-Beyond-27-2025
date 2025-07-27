@@ -9,12 +9,12 @@ export default function Footer() {
         <div className="container text-center">
           {/* Social Icons */}
           <div className="mb-4 d-flex justify-content-center gap-4">
-            <a target='_blank' className="social-icon"><i className="bi bi-facebook"></i></a>
-            <a target='_blank' className="social-icon"><i className="bi bi-pinterest"></i></a>
-            <a target='_blank' href="https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D" className="social-icon"><i className="bi bi-instagram"></i></a>
-            <a target='_blank' href="#" className="social-icon"><i className="bi bi-twitter-x"></i></a>
+            {/* <a target='_blank' className="social-icon"><i className="bi bi-facebook"></i></a> */}
+            {/* <a target='_blank' className="social-icon"><i className="bi bi-pinterest"></i></a> */}
+            <a target='_blank' href="https://www.instagram.com/beyondbikes_vic/?igsh=MTRzcnZ6OG1yc3YzMg%3D%3D" className="social-icon"><i className="bi bi-instagram fs-3 me-3"></i></a>
+            <a target='_blank' href="https://g.co/kgs/66Atysa" className="social-icon"><i className="bi bi-google fs-3 me-3"></i></a>
             <a target='_blank' href="tel:+919428291198" className="social-icon" title="Call Us">
-  <i className="bi bi-telephone-fill"></i>
+  <i className="bi bi-telephone-fill fs-3"></i>
 </a>
           </div>
 

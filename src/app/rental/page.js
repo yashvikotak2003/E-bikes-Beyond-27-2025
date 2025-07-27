@@ -258,13 +258,38 @@ export default function RentalEbikes() {
       </section>
 
       {/* Terms Section */}
-      <section className="py-5" id="rental-terms">
+      <section className="pb-2 pt-4" id="rental-terms">
         <div className="container">
           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Rental Terms & Conditions</h2>
           <ul className="list-group list-group-flush mb-4">
-            <li className="list-group-item"><strong>1.</strong> Two types of e-bikes: with GPS and without GPS.</li>
-            <li className="list-group-item"><strong>2.</strong> Rentals do not include insurance.</li>
-            <li className="list-group-item"><strong>3.</strong> Customers are fully responsible for theft or damage during rental.</li>
+            <li className="list-group-item"><strong>1.</strong> The renter agrees to waive all claims and/or causes of action against the Lessor (BEYOND
+BIKES PTY LTD) arising from the operation, use, or misuse of the rented bicycle.
+</li>
+            <li className="list-group-item"><strong>2.</strong> The renter is responsible for all charges, including rental fees and damages to the
+equipment, and agrees to return the bicycle in the same condition as received (normal
+wear and tear excluded).
+</li>
+            <li className="list-group-item"><strong>3.</strong> Theft or total loss of the rental bike is the sole responsibility of the renter.</li>
+            <li className="list-group-item"><strong>4.</strong> The customer agrees to pay a total of $1,500 in the event of a total loss of the bike or theft of
+the battery. This amount is payable over a period of two (2) weeks following the occurrence
+of the mishap.</li>
+<li className="list-group-item"><strong>5.</strong> The renter is responsible for any misplaced, lost, or unlocked equipment and accessories.
+.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="py-2">
+        <div className="container">
+          <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Accessories Provided</h2>
+          <ul className="list-group list-group-flush mb-4">
+            <li className="list-group-item"><strong>1.</strong> Helmet.
+</li>
+            <li className="list-group-item"><strong>2.</strong> Delivery Bags.
+</li>
+            <li className="list-group-item"><strong>3.</strong> GPS Tracker.</li>
+            <li className="list-group-item"><strong>4.</strong> Bike Lock.</li>
+<li className="list-group-item"><strong>5.</strong> Battery Lock & Charger.</li>
           </ul>
         </div>
       </section>
@@ -272,21 +297,21 @@ export default function RentalEbikes() {
       {/* Rental Package One */}
       <section className="bg-white" id="no-gps">
         <div className="container">
-          <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Package One: Without GPS</h2>
-          <p><FaBicycle className="me-2 fs-1" style={{color:'#f7931e'}}/> Includes delivery bag, 2 locks, helmet, charger, and free maintenance.</p>
-          <p><FaLock className="me-2 fs-2" style={{color:'#f7931e'}}/> Bond: <strong>$300</strong> | Minimum Rental: <strong>2 weeks</strong></p>
+          <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Bikes For Rent:-</h2>
+          {/* <p><FaBicycle className="me-2 fs-1" style={{color:'#f7931e'}}/> Includes delivery bag, 2 locks, helmet, charger, and free maintenance.</p> */}
+          {/* <p><FaLock className="me-2 fs-2" style={{color:'#f7931e'}}/> Bond: <strong>$300</strong> | Minimum Rental: <strong>2 weeks</strong></p> */}
 
-          <div className="row mt-4 g-4">
+          <div className="row mt-4 mb-4 g-4">
             {/* Bike 1 */}
             <div className="col-md-4" itemScope itemType="https://schema.org/Product">
               <div className="card border-0 shadow-sm h-100">
                 <Image src="/images/Product-images-beyond-bikes-product-one-crop (3).png" alt="Flyebike electric bike rental" width={300} height={300} className="card-img-top" loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
-                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">FLYEBIKES</h5>
-                  <p>Battery 48V 80AH – <span className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="offers" itemScope itemType="https://schema.org/Offer">
-                    <span itemProp="priceCurrency" content="USD" />$<span itemProp="price">70</span> / $80
+                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 8-10h</h5>
+                  <p>Battery 48V 70A – <span className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="offers" itemScope itemType="https://schema.org/Offer">
+                    <span itemProp="priceCurrency" content="USD" />$<span itemProp="price">65</span> 
                   </span> per week</p>
-                  <small className="text-muted" itemProp="description">Battery backup 10 - 12 hours</small>
+                  <small className="text-muted" itemProp="description">Battery hours 8-10 hrs.</small>
                 </div>
               </div>
             </div>
@@ -296,9 +321,9 @@ export default function RentalEbikes() {
               <div className="card border-0 shadow-sm h-100">
                 <Image src="/images/Cartoon-Cycle-remove-text.png" alt="Ebike100 rental" width={300} height={300} className="card-img-top" loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
-                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">EBIKE100</h5>
-                  <p>Battery 48V 70AH – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$70 / $80</span> per week</p>
-                  <small className="text-muted">Battery backup 10 - 12 hours</small>
+                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 6-8h</h5>
+                  <p>Battery 48V 50A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$60</span> per week</p>
+                  <small className="text-muted">Battery backup 6-8 hrs.</small>
                 </div>
               </div>
             </div>
@@ -307,9 +332,9 @@ export default function RentalEbikes() {
               <div className="card border-0 shadow-sm h-100">
                 <Image src="/images/latest-ready-to-run-e-bike-red-removebg-preview.png" alt="Ebike100 rental" width={300} height={300} className="card-img-top" loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
-                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">EBIKE100</h5>
-                  <p>Battery 48V 70AH – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$70 / $80</span> per week</p>
-                  <small className="text-muted">Battery backup 10 - 12 hours</small>
+                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 10-12h</h5>
+                  <p>Battery 48V 80A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$70</span> per week</p>
+                  <small className="text-muted">Battery time 10 - 12 hours</small>
                 </div>
               </div>
             </div>
@@ -318,7 +343,7 @@ export default function RentalEbikes() {
       </section>
 
       {/* Rental Package Two */}
-      <section className="py-5 mt-4 bg-light" id="with-gps">
+      {/* <section className="py-5 mt-4 bg-light" id="with-gps">
         <div className="container">
           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Package Two: With GPS Tracking</h2>
           <p><FaMapMarkedAlt className="me-2 fs-2" style={{color:'#f7931e'}}/> GPS installed on both battery and frame for theft protection.</p>
@@ -332,7 +357,7 @@ export default function RentalEbikes() {
             <small className="text-dark" itemProp="description">Battery backup 10 - 12 hours</small>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       {/* <section className="text-dark py-5 text-center" style={{background:'#f7931e'}}>
