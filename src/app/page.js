@@ -11,7 +11,7 @@ import About from './about/page';
 import Footer from './components/Footer'
 // import ProductPage from './components/ProductDetails'
 import ProductPage from './productdetails/page'
-import WarrantyPage from './components/Warranty'
+// import WarrantyPage from './components/Warranty'
 // import Contact from './components/Contact'
 import Contact from './contact/page';
 // import Repairs from './components/Repairs'

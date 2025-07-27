@@ -49,7 +49,7 @@ export default function About() {
                At Beyond Bikes PTY LTD, we believe that exceptional service starts with passionate people and deep industry knowledge. That’s why our team is composed of experienced professionals who are not only experts in e-bikes but also committed to delivering honest advice and personalised support.
               </p>
               <p>
-                We offer a carefully curated range of electric bikes and accessories, each selected for performance, reliability, and value. Whether you're a first-time rider or a seasoned cyclist, we’re here to help you find the perfect solution that fits your lifestyle and budget.​
+                We offer a carefully curated range of electric bikes and accessories, each selected for performance, reliability, and value. Whether you are a first-time rider or a seasoned cyclist, we’re here to help you find the perfect solution that fits your lifestyle and budget.​
               </p>
               
               <p className='fw-600'>We’re proud of our roots — and even more excited about where we’re going.</p>
@@ -78,7 +78,7 @@ export default function About() {
             <div className="col-md-6">
               <h2 className='orangeHeading'>BRAND PHILOSOPHY</h2>
               <p>
-                At Beyond Bikes, we believe that sustainable mobility is not just a trend — it's the future. Our brand philosophy is rooted in the idea that transportation should be smart, accessible, and environmentally responsible. By promoting the use of electric bikes, we aim to inspire a shift towards greener urban living and healthier lifestyles.
+                At Beyond Bikes, we believe that sustainable mobility is not just a trend — it is the future. Our brand philosophy is rooted in the idea that transportation should be smart, accessible, and environmentally responsible. By promoting the use of electric bikes, we aim to inspire a shift towards greener urban living and healthier lifestyles.
               </p>
               <p>
                 We view every customer interaction as an opportunity to share our passion for innovation, quality, and community. EBIKE100 is more than a business — it’s a movement powered by people who care about the planet and the freedom to move.

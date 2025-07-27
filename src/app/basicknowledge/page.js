@@ -24,7 +24,7 @@ export default function BasicKnowlegePage() {
         <hr />
 
         <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Abstract</h5>
-        <p className='fs-6'>This section presents the privacy policy of Beyond bikes Pty Ltd, outlining the company's approach to managing personal information. The policy is designed to ensure transparency and security in handling data collected from various stakeholders, including website visitors, mobile application users, members, job applicants, and service providers. The policy covers the types of data collected, the methods of data collection, purposes for data use, data sharing protocols, retention periods, data protection rights, security measures..</p>
+        <p className='fs-6'>This section presents the privacy policy of Beyond bikes Pty Ltd, outlining the companys approach to managing personal information. The policy is designed to ensure transparency and security in handling data collected from various stakeholders, including website visitors, mobile application users, members, job applicants, and service providers. The policy covers the types of data collected, the methods of data collection, purposes for data use, data sharing protocols, retention periods, data protection rights, security measures..</p>
 
         <h5 className="mt-4 fw-bold" style={{color:'#f7931e'}}>Introduction</h5>
         <p className='fs-6'>Beyond bikes Pty Ltd is committed to protecting the privacy and personal information of its stakeholders. This privacy policy provides an in-depth overview of how personal data is collected, utilized, stored, shared, and protected when individuals engage with our company. The policy applies to all interactions, including visiting our website, using mobile applications, participating in promotions or contests, registering as a member, applying for a job, or offering services to us.
@@ -64,7 +64,7 @@ Service Providers: Data is obtained through direct interactions or automated pro
         {/* <ul>
           <li className='fw-bold fs-6'>conditions, malfunctions or damage not resulting from defects in material or workmanship</li>
         </ul> */}
-        <p className='fs-6'>Details such as names, ID numbers (e.g., driver's license, passport), and dates of birth uniquely identify a person.</p>
+        <p className='fs-6'>Details such as names, ID numbers (e.g., drivers license, passport), and dates of birth uniquely identify a person.</p>
         <p className='fs-6'>Mailing addresses, email addresses, and phone numbers used for communication and billing.
 
 Bank account details, BSB numbers, and credit/debit card information are used for processing payments.</p>

@@ -199,7 +199,7 @@ export default function CartoonDetailsPage() {
 
         <h2 className="fw-bold display-5">Conquer the city streets or <br /><span className="text-secondary">the mountain trails</span></h2>
         <p className="mt-3 fs-5 text-muted px-2 px-md-5">
-         The MK220 new generation 20"  Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trip's distance and 10% more of the gradeability and 10% less of its weight than our old generation .  
+         The MK220 new generation 20 Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trips distance and 10% more of the gradeability and 10% less of its weight than our old generation .  
          </p>
 
         <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
