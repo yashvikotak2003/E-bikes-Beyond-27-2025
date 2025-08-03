@@ -8,6 +8,7 @@ import '../styles/productdetails.css'
 import Header from '../components/Header';
 import { useRouter } from 'next/navigation';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Footer from '../components/Footer';
 
 
 
@@ -404,7 +405,7 @@ export default function ProductPage() {
       </div>
     </div> */}
     <div className="description-section">
-  <h1 className="section-title">Description</h1>
+  <h1 className="section-title" style={{color:'rgb(247,147,30)'}}>Description</h1>
 
   <div className="insurance-box">
     <h2 className="insurance-title">Insurance Offered</h2>
@@ -616,6 +617,7 @@ export default function ProductPage() {
 
         </div>
       </div> */}
+      <Footer />
     </>
   );
 }

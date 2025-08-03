@@ -8,6 +8,7 @@ import '../styles/productdetails.css'
 import Header from '../components/Header';
 import { useRouter } from 'next/navigation';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Footer from '../components/Footer';
 
 
 
@@ -293,7 +294,7 @@ export default function CartoonDetailsPage() {
             <a className="nav-link text-muted" href="#">Reviews (1)</a>
           </li>
         </ul> */}
-        <h1 className="fw-bold" aria-current="page" href="#">Description</h1>
+        <h1 className="fw-bold mb-4" aria-current="page" style={{color:'rgb(247,147,30)'}} href="#">Description</h1>
             <h2>Insurance offered</h2>
             <h3>Insurance only covers theft of battery.</h3>
             <h4>No accident compensation.</h4>
@@ -304,7 +305,7 @@ export default function CartoonDetailsPage() {
          The MK220 new generation 20 Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trip is distance and 10% more of the gradeability and 10% less of its weight than our old generation .  </p> */}
 
          <div className="description-section">
-  <h1 className="section-title">Description</h1>
+  {/* <h1 className="section-title">Description</h1> */}
 
   <div className="insurance-box">
     <h2 className="insurance-title">Insurance Offered</h2>
@@ -369,7 +370,7 @@ export default function CartoonDetailsPage() {
           </div> */}
         </div>
       </div>
-      
+      <Footer />
     </>
   );
 }
