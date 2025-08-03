@@ -27,8 +27,8 @@ nav ul.nav li.nav-item a {
   }
 
   .set-logo-height {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 55px;
   }
 
   nav ul.nav {
@@ -58,6 +58,11 @@ nav ul.nav li.nav-item a {
   h1.fw-bold {
     margin: 0;
   }
+}
+
+.set-bg-header {
+  border: 1px solid #fff;
+  background-color: #f7931e !important;
 }
 
 /*# sourceMappingURL=src_app_styles_header_css_f9ee138c._.single.css.map*/

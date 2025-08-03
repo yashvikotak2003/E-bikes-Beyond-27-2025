@@ -224,7 +224,7 @@ export default function ProductTabs() {
   <img
     src={product.image}
     alt={`Image of ${product.name}`}
-    className="img-fluid product-image mb-3"
+    className="img-fluid product-image mt-3 mb-3"
     loading="lazy"
     style={{cursor: 'pointer'}}
     itemProp="image"

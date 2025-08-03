@@ -204,8 +204,8 @@ export default function AmazingOffers() {
         
       </section> */}
       <section className="hero-section">
-  <h1 className="hero-title">SCHOOL STUDENTS DISCOUNT</h1>
-  <h2 className="hero-subtitle">Students Discount</h2>
+  <h1 className="hero-title">ONLY STUDENTS DEAL</h1>
+  <h2 className="hero-subtitle">Coming Soon....</h2>
 
   <div className="food-container">
     {foodData.map((item, idx) => (

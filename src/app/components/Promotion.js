@@ -77,14 +77,14 @@ export default function Promotion() {
         priority
       />
 
-      <div className="position-absolute set-start-50 translate-middle text-center bg-white text-dark px-5 py-5 rounded shadow-lg opening-box animate-opening">
+      <div className="position-absolute set-start-50 translate-middle text-center bg-white text-dark px-5 py-4 rounded shadow-lg opening-box animate-opening">
         <h1 id="opening-hours-heading" className="fw-bold fs-3 mb-3" itemProp="name">
           OPENING HOURS
         </h1>
         <h4 className="mb-3" itemProp="opens">
           Mon - Sun: <time dateTime="10:00">9am</time> - <time dateTime="18:00">7pm</time>
         </h4>
-        <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes avaliable at anytime</h4>
+        {/* <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes avaliable at anytime</h4> */}
       </div>
     </motion.section>
   );

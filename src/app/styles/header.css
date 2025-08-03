@@ -97,8 +97,8 @@ nav ul.nav li.nav-item a{
   }
 
   .set-logo-height{
-  height: 50px;
-  width: 50px;
+  height: 55px;
+  width: 75px;
 }
 
   nav ul.nav {
@@ -133,4 +133,8 @@ nav ul.nav li.nav-item a{
   }
 }
 
+.set-bg-header{
+  background-color: rgb(247,147,30) !important;
+  border: 1px solid white;
+}
 

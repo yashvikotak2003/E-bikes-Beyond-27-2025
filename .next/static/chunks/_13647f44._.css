@@ -13370,9 +13370,6 @@ textarea.form-control-lg {
 }
 
 .product-image {
-  object-fit: contain;
-  width: 100%;
-  max-width: 217px;
   height: 180px;
   margin-bottom: 1.5rem;
   margin-left: auto;
@@ -13461,7 +13458,7 @@ textarea.form-control-lg {
   }
 
   .product-image {
-    max-width: 120px;
+    max-width: 140px;
     height: 120px;
   }
 
@@ -13596,8 +13593,8 @@ nav ul.nav li.nav-item a {
   }
 
   .set-logo-height {
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 55px;
   }
 
   nav ul.nav {
@@ -13627,6 +13624,11 @@ nav ul.nav li.nav-item a {
   h1.fw-bold {
     margin: 0;
   }
+}
+
+.set-bg-header {
+  border: 1px solid #fff;
+  background-color: #f7931e !important;
 }
 
 

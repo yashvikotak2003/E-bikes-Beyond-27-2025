@@ -128,7 +128,7 @@ export default function Header() {
         <img src='/images/Logo-for-ebike-beyond-bikes-removebg-preview.png' alt='logo' className='set-logo-height'/>
 
         <button className="btn d-md-none menu-position" onClick={() => setMenuOpen(!menuOpen)}>
-          <img src='/images/HemburgMenu.svg' height={'50px'} width={'50px'} alt='menu-bar'/>
+          <img src='/images/HemburgMenu.svg' height={'35px'} width={'35px'} alt='menu-bar'/>
         </button>
 
         <nav className="d-md-flex flex-grow-1 justify-content-end">
@@ -219,7 +219,7 @@ export default function Header() {
   ))}
 </ul> */}
 
-<ul className={`nav flex-column flex-md-row text-center ${menuOpen ? 'd-block bg-warning' : 'd-none d-md-flex'}`}>
+<ul className={`nav flex-column flex-md-row text-center ${menuOpen ? 'd-block set-bg-header' : 'd-none d-md-flex'}`}>
   {[
     ['/', 'Home'],
     ['/products', 'Products'],
