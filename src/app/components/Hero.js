@@ -210,7 +210,7 @@ export default function Hero() {
               fontWeight:'600',
               border:'none'
             }}
-            >Rent NOW</a>
+            >RENT NOW</a>
 
             {/* SEO fallback for crawlers */}
             <noscript>

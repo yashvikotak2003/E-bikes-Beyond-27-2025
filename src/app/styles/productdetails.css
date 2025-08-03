@@ -54,3 +54,89 @@
   width: 350px !important;
 }
 }
+
+.description-section {
+  max-width: 1100px;
+  margin: 0px auto;
+  padding: 0px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(247, 147, 30);
+  margin-bottom: 40px;
+}
+
+.insurance-box {
+  background-color: #f3f9ff;
+  border-left: 5px solid rgb(247, 147, 30);
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+}
+
+.insurance-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: rgb(247, 147, 30);
+}
+
+.positive {
+  color: #2e8b57;
+  font-weight: 500;
+}
+
+.negative {
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+.rental-title {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(247, 147, 30);
+  margin-bottom: 30px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1 1 45%;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: rgb(247, 147, 30);
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #efefef;
+}

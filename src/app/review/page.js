@@ -56,7 +56,8 @@ export default function Review() {
         />
       </Head>
 
-      <main className="container py-5">
+      <main className="container py-3">
+      <h1 className='text-center py-3' style={{color:'rgb(247, 147, 30)'}}>Reviews</h1>
         <section className="row g-4">
           {team.map((member, index) => (
             <article className="col-md-6 col-lg-6" key={index}>
@@ -93,7 +94,7 @@ export default function Review() {
                   {renderStars(member.rating)}
                 </div>
                 <div className="fw-bold" style={{color:'#f7931e',fontStyle:'italic'}}>- {member.name}</div>
-                <div className="small" style={{color:'#f7931e'}}>{member.role}</div>
+                {/* <div className="small" style={{color:'#f7931e'}}>{member.role}</div> */}
               </div>
             </article>
           ))}

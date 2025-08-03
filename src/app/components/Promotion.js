@@ -84,7 +84,7 @@ export default function Promotion() {
         <h4 className="mb-3" itemProp="opens">
           Mon - Sun: <time dateTime="10:00">9am</time> - <time dateTime="18:00">7pm</time>
         </h4>
-        <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes Avaliable at anytime</h4>
+        <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes avaliable at anytime</h4>
       </div>
     </motion.section>
   );

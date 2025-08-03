@@ -283,7 +283,7 @@ export default function CartoonDetailsPage() {
           </div>
         </div>
       </div>
-      <div className="container text-center py-5">
+      <div className="container text-center py-4">
         {/* <ul className="nav nav-tabs justify-content-center border-0 mb-4">
           <li className="nav-item">
             <a className="nav-link active fw-bold" aria-current="page" href="#">Description</a>
@@ -296,50 +296,49 @@ export default function CartoonDetailsPage() {
           </li>
         </ul> */}
         <h1 className="fw-bold" aria-current="page" href="#">Description</h1>
-            <h2>No Insurance Offered</h2>
-            <h3>E-bikes does not offer Insurance services.</h3>
-            <h4>Please make your own arrangemants if needed.</h4>
+            <h2>Insurance offered</h2>
+            <h3>Insurance only covers theft of battery.</h3>
+            <h4>No accident compensation.</h4>
+            <h4>No third party costs insured.</h4>
 
         {/* <h2 className="fw-bold display-5">Conquer the city streets or <br /><span className="text-secondary">the mountain trails</span></h2>
         <p className="mt-3 fs-5 text-muted px-2 px-md-5">
          The MK220 new generation 20 Cargo E-Bike comes with our Battery Efficiency Saving (BES) technology.  This new BES technology give riders 20% more of their trips distance and 10% more of the gradeability and 10% less of its weight than our old generation .  
          </p> */}
-         <div style={{ padding: '20px' }}>
-      <h2 className='mb-4' style={{ textAlign: 'center' }}>Rental Information</h2>
-      <div style={{ display: 'flex', justifyContent: 'space-around' }}>
-        {/* Documents for Rent Table */}
-        <table style={{ width: '48%', margin: '0 10px', padding:'10px', textAlign: 'left',borderRadius:'10px' }}>
-          <thead>
-            <tr>
-              <th>Documents for Rent</th>
-            </tr>
-          </thead>
-          <tbody>
-            {documentsForRent.map((item, index) => (
-              <tr key={index}>
-                <td>{index + 1}. {item}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <div className="description-section">
+  <h1 className="section-title">Description</h1>
 
-        {/* Important Information Table */}
-        <table style={{ width: '48%', margin: '0 10px', textAlign: 'left' }}>
-          <thead>
-            <tr>
-              <th>Our rental fee includes</th>
-            </tr>
-          </thead>
-          <tbody>
-            {importantInformation.map((item, index) => (
-              <tr key={index}>
-                <td>{index + 1}. {item}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+  <div className="insurance-box">
+    <h2 className="insurance-title">Insurance Offered</h2>
+    <p className="positive">✔ Insurance only covers theft of battery.</p>
+    <p className="negative">✘ No accident compensation.</p>
+    <p className="negative">✘ No third-party costs insured.</p>
+  </div>
+
+  <h2 className="rental-title">Rental Information</h2>
+
+  <div className="info-cards">
+    <div className="info-card">
+      <div className="info-header">Documents for Rent</div>
+      <ul className="info-list">
+        <li>1. Aadhar Card</li>
+        <li>2. Driving License</li>
+        <li>3. Passport-size Photograph</li>
+        <li>4. Security Deposit</li>
+      </ul>
     </div>
+
+    <div className="info-card">
+      <div className="info-header">Our Rental Fee Includes</div>
+      <ul className="info-list">
+        <li>1. Helmet</li>
+        <li>2. Battery Charger</li>
+        <li>3. Lock and Keys</li>
+        <li>4. Roadside Assistance</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
         <div className="row row-cols-1 row-cols-md-4 g-4 mt-5">
           <div className="col-md-4">

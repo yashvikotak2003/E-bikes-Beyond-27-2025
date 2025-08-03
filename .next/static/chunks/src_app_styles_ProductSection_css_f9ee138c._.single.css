@@ -29,9 +29,6 @@
 }
 
 .product-image {
-  object-fit: contain;
-  width: 100%;
-  max-width: 217px;
   height: 180px;
   margin-bottom: 1.5rem;
   margin-left: auto;

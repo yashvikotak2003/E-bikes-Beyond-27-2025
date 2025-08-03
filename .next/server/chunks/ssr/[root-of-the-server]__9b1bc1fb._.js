@@ -405,7 +405,7 @@ function Footer() {
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     target: "_blank",
-                                    href: "tel:+919428291198",
+                                    href: "tel:+61422032961",
                                     className: "social-icon",
                                     title: "Call Us",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
@@ -834,7 +834,7 @@ function About() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                children: "At Beyond Bikes PTY LTD, we believe that exceptional service starts with passionate people We offer a carefully curated range of electric bikes and accessories. We’re proud of our roots — and even more excited about where we’re going.And Deleivery Freedom at any place without any battery issue."
+                                                children: "At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues.              "
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.js",
                                                 lineNumber: 149,
@@ -856,12 +856,12 @@ function About() {
                                             height: 400
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/about/page.js",
-                                            lineNumber: 159,
+                                            lineNumber: 153,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/page.js",
-                                        lineNumber: 158,
+                                        lineNumber: 152,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -884,7 +884,7 @@ function About() {
             }, this),
             pathname === '/about' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/about/page.js",
-                lineNumber: 193,
+                lineNumber: 187,
                 columnNumber: 33
             }, this)
         ]

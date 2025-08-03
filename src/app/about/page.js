@@ -147,13 +147,7 @@ export default function About() {
             <div className="col-md-6">
               <h2 className='orangeHeading'>STORE BACKGROUND</h2>
               <p>
-                At Beyond Bikes PTY LTD, we believe that exceptional service starts with passionate people
-              
-              
-                We offer a carefully curated range of electric bikes and accessories.
-              
-              We’re proud of our roots — and even more excited about where we’re going.And Deleivery Freedom at any place without any battery issue.
-              </p>
+                At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues.              </p>
             </div>
             <div className="col-md-6 text-end mb-4 mb-md-0">
               <Image
