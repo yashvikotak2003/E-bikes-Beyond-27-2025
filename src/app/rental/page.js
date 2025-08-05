@@ -296,16 +296,28 @@ of the mishap.</li>
 
       {/* Rental Package One */}
       <section className="bg-white" id="no-gps">
-        <div className="container">
+        <div className="container px-3">
           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Bikes For Rent:-</h2>
           {/* <p><FaBicycle className="me-2 fs-1" style={{color:'#f7931e'}}/> Includes delivery bag, 2 locks, helmet, charger, and free maintenance.</p> */}
           {/* <p><FaLock className="me-2 fs-2" style={{color:'#f7931e'}}/> Bond: <strong>$300</strong> | Minimum Rental: <strong>2 weeks</strong></p> */}
 
           <div className="row mt-4 mb-4 g-4">
             {/* Bike 1 */}
+            
+<div className="col-md-4" itemScope itemType="https://schema.org/Product">
+              <div className="card border-0 shadow-sm h-100">
+                <img src="/images/Cartoon-Cycle-remove-text-latest.png" alt="Ebike100 rental" className="card-img-top product-image" loading="lazy" itemProp="image" />
+                <div className="card-body text-center">
+                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 6-8h</h5>
+                  <p>Battery 48V 50A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$60</span> per week</p>
+                  <small className="text-muted">Battery backup 6-8 hrs.</small>
+                </div>
+              </div>
+            </div>
+            {/* Bike 2 */}
             <div className="col-md-4" itemScope itemType="https://schema.org/Product">
               <div className="card border-0 shadow-sm h-100">
-                <Image src="/images/Product-images-beyond-bikes-product-one-crop (3).png" alt="Flyebike electric bike rental" width={300} height={300} className="card-img-top" loading="lazy" itemProp="image" />
+                <img src="/images/Product-images-beyond-bikes-product-one-crop (3).png" alt="Flyebike electric bike rental" className="card-img-top product-image" loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
                   <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 8-10h</h5>
                   <p>Battery 48V 70A – <span className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="offers" itemScope itemType="https://schema.org/Offer">
@@ -316,21 +328,9 @@ of the mishap.</li>
               </div>
             </div>
 
-            {/* Bike 2 */}
             <div className="col-md-4" itemScope itemType="https://schema.org/Product">
               <div className="card border-0 shadow-sm h-100">
-                <Image src="/images/Cartoon-Cycle-remove-text.png" alt="Ebike100 rental" width={300} height={300} className="card-img-top" loading="lazy" itemProp="image" />
-                <div className="card-body text-center">
-                  <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 6-8h</h5>
-                  <p>Battery 48V 50A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$60</span> per week</p>
-                  <small className="text-muted">Battery backup 6-8 hrs.</small>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-md-4" itemScope itemType="https://schema.org/Product">
-              <div className="card border-0 shadow-sm h-100">
-                <Image src="/images/latest-ready-to-run-e-bike-red-removebg-preview.png" alt="Ebike100 rental" width={300} height={300} className="card-img-top" loading="lazy" itemProp="image" />
+                <img src="/images/Latest-Change-Angle-Red-Cycle-latest.png" alt="Ebike100 rental" className="card-img-top" height={'270px'} width={'350px'} loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
                   <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 10-12h</h5>
                   <p>Battery 48V 80A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$70</span> per week</p>

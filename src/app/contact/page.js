@@ -368,7 +368,9 @@ export default function Contact() {
       {/* ✅ Header will only render if NOT on home page */}
       {pathname !== '/' && <Header />}
 
-      <div className="container py-5">
+
+      <div className="container px-sm-0 px-3 py-5">
+      <h1 className='text-center pb-4' style={{color: '#f7931e'}}>Contact Us</h1>
         <div className="row g-4 align-items-start">
 
           {/* Form Section */}

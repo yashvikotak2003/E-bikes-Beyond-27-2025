@@ -174,13 +174,10 @@ export default function Hero() {
 
   return (
     <section
-      className="d-flex position-relative text-white text-center text-md-start"
+      className="d-flex position-relative responsive-bg text-white text-center text-md-start"
       style={{
         backgroundImage: `url(${images[currentImageIndex]})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        transition: 'background-image 0.5s ease-in-out',
-        height:'150vh'
+        
       }}
     >
       <div className="container position-relative z-2 mt-5 pt-5">

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "E-bike 6-8h",
-      "image": "/images/Cartoon-Cycle-remove-text.png",
+      "image": "/images/Cartoon-Cycle-remove-text-latest.png",
       "price": "$60.00 USD",
       "oldPrice": "$65.00 USD"
     },
@@ -18,7 +18,7 @@
     {
       "id": 3,
       "name": "E-bike 10-12h",
-      "image": "/images/Latest-Change-Angle-Red-Cycle.png",
+      "image": "/images/Latest-Change-Angle-Red-Cycle-latest.png",
       "price": "$70.00 USD",
       "oldPrice": "$80.00 USD"
     }

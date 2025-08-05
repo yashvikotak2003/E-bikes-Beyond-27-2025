@@ -106,7 +106,7 @@ nav ul.nav li.nav-item a{
     top: 78px;
     left: 0;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     /* padding: 1rem 0; */
     margin: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -135,6 +135,46 @@ nav ul.nav li.nav-item a{
 
 .set-bg-header{
   background-color: rgb(247,147,30) !important;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
+.custom-nav {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: scaleY(0.95);
+  transform-origin: top;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: rgb(247, 147, 30); /* Always orange */
+  transition:
+    max-height 0.6s ease,
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.6s,
+    pointer-events 0.6s,
+    background-color 0.4s ease;
+}
+
+.custom-nav.open {
+  max-height: 1000px;
+  opacity: 1;
+  transform: scaleY(1);
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.menu-position:active{
+  border: 1px solid #f7931e !important;
+}
+
+/* For desktop, no animation – menu always visible */
+@media (min-width: 768px) {
+  .custom-nav {
+    max-height: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    display: flex !important;
+  }
+}

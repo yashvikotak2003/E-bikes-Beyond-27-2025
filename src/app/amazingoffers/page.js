@@ -204,7 +204,7 @@ export default function AmazingOffers() {
         
       </section> */}
       <section className="hero-section">
-  <h1 className="hero-title">ONLY STUDENTS DEAL</h1>
+  <h1 className="hero-title">STUDENTS DEAL</h1>
   <h2 className="hero-subtitle">Coming Soon....</h2>
 
   <div className="food-container">

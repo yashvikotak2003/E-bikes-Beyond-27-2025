@@ -3,6 +3,24 @@ import Image from 'next/image';
 
 export default function Review() {
   const team = [
+    {
+      name: 'Zadid Kawser',
+      reviewtitle:'Perfect for city living.',
+      reviewdescription:'Had a fantastic experience with Beyond Bikes! Sahil is incredibly professional and made the whole e-bike rental process super smooth and easy. Their bikes are well-maintained, reliable, and perfect for getting around the city. What really sets them apart is the warm, welcoming vibe. You’re even greeted by the sweetest dog named Jamie at the front! It’s little touches like that that make all the difference. Highly recommend them if you’re looking for a stress-free, quality e-bike rental experience.',
+      img: '/images/Latest-fifith-review.png',
+      alt: 'Paul Smith profile picture',
+      rating: 5,
+      role: 'Student',
+    },
+    {
+      name: 'Mei lisa',
+      reviewtitle:'Great service & great bikes!',
+      reviewdescription:'I had an excellent experience at Beyond Bikes. The owner was genuinely helpful, welcoming, and clearly passionate about what they do. The e-bike I rented has been incredibly reliable and has exceeded my expectations in performance. Highly recommend this shop to anyone looking for quality and great service.',
+      img: '/images/latest-sixth-review.png',
+      alt: 'Paul Smith profile picture',
+      rating: 5,
+      role: 'Student',
+    },
     
     {
       name: 'Sankeerth Reddy',
@@ -40,6 +58,7 @@ export default function Review() {
       rating: 5,
       role: 'Student',
     },
+    
   ];
 
   const renderStars = (count, number) => {
@@ -56,7 +75,7 @@ export default function Review() {
         />
       </Head>
 
-      <main className="container py-3">
+      <main className="container px-3 py-3">
       <h1 className='text-center py-3' style={{color:'rgb(247, 147, 30)'}}>Reviews</h1>
         <section className="row g-4">
           {team.map((member, index) => (

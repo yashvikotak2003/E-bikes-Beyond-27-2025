@@ -19,7 +19,7 @@ export default function BasicKnowlegePage() {
       </Head>
 
 <Header />
-      <div className="container py-2 warranty-page">
+      <div className="container py-4 px-4 warranty-page">
         <h2 className="text-center fw-bold mb-4 mt-4" style={{color:'#f7931e'}}>Privacy Policy</h2>
         <hr />
 

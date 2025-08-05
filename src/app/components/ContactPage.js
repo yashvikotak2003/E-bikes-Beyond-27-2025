@@ -8,7 +8,7 @@ import '../styles/Contact.css';
 export default function ContactPage() {
   return (
     <section className='mt-5' style={{background:'#f8f8f8'}}>
-    <div className="container py-5 text-white" aria-label="Store Locations">
+    <div className="container py-5 px-3 text-white" aria-label="Store Locations">
       <div className="row justify-content-center mb-4">        
           <h2 className="text-center" style={{color:'#ff6b00'}}>Contact Us on Store Location</h2>  
         
@@ -27,7 +27,7 @@ export default function ContactPage() {
             <a href="#" aria-label="Facebook"><FaFacebookF size={20} className="text-white" /></a>
           </div> */}
         </div>
-        <div className="col-md-6" >
+        <div className="col-md-6 d-flex justify-content-center">
           {/* <iframe
             title="EBIKE100 Map"
             // src="https://www.google.com/maps?q=260+Rosslyn+St,+West+Melbourne+VIC+3003,+Australia&output=embed"

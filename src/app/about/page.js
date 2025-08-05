@@ -121,7 +121,7 @@ export default function About() {
 
       <section className='aboutSection mb-5'>
         <h1 className='text-center' style={{marginBottom:'60px',color:'#f7931e',marginTop:'60px'}}>About Us</h1>
-        <div className="container">
+        <div className="container px-3 px-sm-0">
           {/* Section 1 */}
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0">
@@ -143,13 +143,13 @@ export default function About() {
           </div>
 
           {/* Section 2 */}
-          <div className="row mt-5 align-items-center">
-            <div className="col-md-6">
+          <div className="row mt-sm-5 mt-2 align-items-center">
+            <div className="col-md-6 order-sm-1 order-2">
               <h2 className='orangeHeading'>STORE BACKGROUND</h2>
               <p>
                 At Beyond Bikes Pty Ltd, we believe that exceptional service starts with passionate people. We offer a carefully curated range of electric bikes and accessories. We are proud of our roots and even more excited about where we are going. We also offer delivery freedom to any location, with no battery issues.              </p>
             </div>
-            <div className="col-md-6 text-end mb-4 mb-md-0">
+            <div className="col-md-6 order-sm-2 order-1 text-end mb-4 mb-md-0">
               <Image
                 src={aboutImg1}
                 alt="About EBIKE100"
