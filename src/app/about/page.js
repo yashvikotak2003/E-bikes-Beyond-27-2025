@@ -96,7 +96,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import aboutImg from '../../../public/images/Latest-admin-image.jpg'; 
-import aboutImg1 from '../../../public/images/Latest-admin-cycles-images-size.jpg'; 
+import aboutImg1 from '../../../public/images/Latest-repairer-admin.jpg'; 
 import aboutthree from '../../../public/images/about-image.jpg';
 import '../styles/About.css';
 import Header from '../components/Header';
