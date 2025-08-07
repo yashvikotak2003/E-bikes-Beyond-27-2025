@@ -78,7 +78,7 @@ export default function CartoonDetailsPage() {
       <div className="container py-5">
         <div className="row align-items-start">
           {/* Left Image */}
-          <div className="col-xl-7 mb-4">
+          <div className="col-xl-7 mb-4 only-mobile-center">
             <Image src={images[selectedColor]} alt="Cali Cruiser" width={600} height={600} className='set-image-bikes'/>
 
             {/* <div className="d-sm-flex mt-3 gap-3">
@@ -116,7 +116,7 @@ export default function CartoonDetailsPage() {
               Take to the streets or trails with this powerful all-terrain mid-drive electric bicycle. The City Surfer delivers unmatched performance you won’t find anywhere else.
             </p> */}
 
-            <div className="fs-4 fw-bold">PRICE : $60 <del className="text-muted fs-4 ms-2">$70</del></div>
+            <div className="fs-4 fw-bold">PRICE : $60 AUD <del className="text-muted fs-4 ms-2">$70 AUD</del></div>
             <div className="mt-3">
   <h5 className="fw-bold text-orange mb-3">Specifications</h5>
   <ul className="list-unstyled">

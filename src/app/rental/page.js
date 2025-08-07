@@ -273,7 +273,8 @@ wear and tear excluded).
             <li className="list-group-item"><strong>4.</strong> The customer agrees to pay a total of $1,500 in the event of a total loss of the bike or theft of
 the battery. This amount is payable over a period of two (2) weeks following the occurrence
 of the mishap.</li>
-<li className="list-group-item"><strong>5.</strong> The renter is responsible for any misplaced, lost, or unlocked equipment and accessories.
+<li className="list-group-item"><strong>5.</strong> A minimum of 7 days notice is required prior to the scheduled return of the bike.</li>
+<li className="list-group-item"><strong>6.</strong> The renter is responsible for any misplaced, lost, or unlocked equipment and accessories.
 .</li>
           </ul>
         </div>
@@ -309,8 +310,8 @@ of the mishap.</li>
                 <img src="/images/Cartoon-Cycle-remove-text-latest.png" alt="Ebike100 rental" className="card-img-top product-image" loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
                   <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 6-8h</h5>
-                  <p>Battery 48V 50A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$60</span> per week</p>
-                  <small className="text-muted">Battery backup 6-8 hrs.</small>
+                  <p>Battery 48V 50A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$60 AUD</span> per week</p>
+                  <small className="text-muted">Battery hours 6-8 hrs.</small>
                 </div>
               </div>
             </div>
@@ -321,7 +322,7 @@ of the mishap.</li>
                 <div className="card-body text-center">
                   <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 8-10h</h5>
                   <p>Battery 48V 70A – <span className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="offers" itemScope itemType="https://schema.org/Offer">
-                    <span itemProp="priceCurrency" content="USD" />$<span itemProp="price">65</span> 
+                    <span itemProp="priceCurrency" content="USD" />$<span itemProp="price">65 AUD</span> 
                   </span> per week</p>
                   <small className="text-muted" itemProp="description">Battery hours 8-10 hrs.</small>
                 </div>
@@ -333,8 +334,8 @@ of the mishap.</li>
                 <img src="/images/Latest-Change-Angle-Red-Cycle-latest.png" alt="Ebike100 rental" className="card-img-top" height={'270px'} width={'350px'} loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
                   <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 10-12h</h5>
-                  <p>Battery 48V 80A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$70</span> per week</p>
-                  <small className="text-muted">Battery time 10 - 12 hours</small>
+                  <p>Battery 48V 80A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$70 AUD</span> per week</p>
+                  <p className="text-muted">Battery hours 10 - 12 hours</p>
                 </div>
               </div>
             </div>

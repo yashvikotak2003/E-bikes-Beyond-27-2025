@@ -319,7 +319,7 @@ export default function ProductTabs() {
       } else {
         router.push('/E-bike-8-10h');
       }
-    }, 1000); // 5 seconds
+    }, 1000); 
   };
 
   const filteredProducts = productsData[activeTab] || [];
@@ -387,7 +387,7 @@ export default function ProductTabs() {
                 <h1 className="product-title mt-3 fs-4" itemProp="name">{product.name}</h1>
                 <p className="product-price fs-5" itemProp="offers" itemScope itemType="https://schema.org/Offer">
                   <span itemProp="price">{product.price}</span>
-                  <meta itemProp="priceCurrency" content="USD" />
+                  <meta itemProp="priceCurrency" content="AUD" />
                   <span className="old-price fs-5">{product.oldPrice}</span>
                 </p>
               </article>

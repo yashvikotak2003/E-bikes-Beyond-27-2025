@@ -232,11 +232,19 @@ export default function Header() {
           zIndex: 1000,
         }}
       >
-        <div className="container position-relative py-3 d-flex justify-content-between align-items-center">
+        <div className="container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center">
           <img
             src="/images/Logo-for-ebike-beyond-bikes-removebg-preview.png"
             alt="logo"
             className="set-logo-height"
+            onClick={() => {
+    if (pathname !== '/') {
+      setLoading(true);
+      setTimeout(() => {
+        router.push('/');
+      }, 1000); 
+    }
+  }}
           />
 
           <button

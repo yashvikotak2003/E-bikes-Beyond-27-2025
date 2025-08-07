@@ -32,11 +32,67 @@
 //   );
 // }
 
+// "use client";
+// import React, { useEffect, useState, useRef } from 'react';
+// import Image from 'next/image';
+// import { motion } from 'framer-motion';
+// import openingImage from '../../../public/images/multiple-e-bikes.jpg';
+// import '../styles/OpeningHours.css';
+
+// export default function Promotion() {
+//   const [isVisible, setIsVisible] = useState(false);
+//   const sectionRef = useRef();
+
+//   useEffect(() => {
+//     const handleScroll = () => {
+//       const section = sectionRef.current;
+//       if (!section) return;
+//       const rect = section.getBoundingClientRect();
+//       if (rect.top <= window.innerHeight * 0.75) {
+//         setIsVisible(true);
+//       }
+//     };
+
+//     window.addEventListener("scroll", handleScroll);
+//     handleScroll(); // check on mount
+//     return () => window.removeEventListener("scroll", handleScroll);
+//   }, []);
+
+//   return (
+//     <motion.section
+//       ref={sectionRef}
+//       className="position-relative text-white"
+//       aria-labelledby="opening-hours-heading"
+//       itemScope
+//       itemType="https://schema.org/OpeningHoursSpecification"
+//       initial={{ opacity: 0, y: 60 }}
+//       animate={isVisible ? { opacity: 1, y: 0 } : {}}
+//       transition={{ duration: 0.7, ease: "easeOut" }}
+//     >
+//       <Image
+//         src={openingImage}
+//         alt="Bikes in store"
+//         className="img-fluid w-100 position-relative"
+//         style={{ objectFit: 'cover', height: '80vh' }}
+//         priority
+//       />
+
+//       <div className="position-absolute set-start-50 translate-middle text-center bg-white text-dark px-5 py-4 rounded shadow-lg opening-box animate-opening">
+//         <h1 id="opening-hours-heading" className="fw-bold fs-3 mb-3" itemProp="name">
+//           OPENING HOURS
+//         </h1>
+//         <h4 className="mb-3" itemProp="opens">
+//           Mon - Sun: <time dateTime="10:00">9am</time> - <time dateTime="18:00">7pm</time>
+//         </h4>
+//         {/* <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes avaliable at anytime</h4> */}
+//       </div>
+//     </motion.section>
+//   );
+// }
+
 "use client";
 import React, { useEffect, useState, useRef } from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import openingImage from '../../../public/images/multiple-e-bikes.jpg';
 import '../styles/OpeningHours.css';
 
 export default function Promotion() {
@@ -61,7 +117,7 @@ export default function Promotion() {
   return (
     <motion.section
       ref={sectionRef}
-      className="position-relative text-white"
+      className="promotion-section text-white position-relative"
       aria-labelledby="opening-hours-heading"
       itemScope
       itemType="https://schema.org/OpeningHoursSpecification"
@@ -69,22 +125,17 @@ export default function Promotion() {
       animate={isVisible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
-      <Image
-        src={openingImage}
-        alt="Bikes in store"
-        className="img-fluid w-100 position-relative"
-        style={{ objectFit: 'cover', height: '80vh' }}
-        priority
-      />
-
-      <div className="position-absolute set-start-50 translate-middle text-center bg-white text-dark px-5 py-4 rounded shadow-lg opening-box animate-opening">
-        <h1 id="opening-hours-heading" className="fw-bold fs-3 mb-3" itemProp="name">
-          OPENING HOURS
-        </h1>
-        <h4 className="mb-3" itemProp="opens">
-          Mon - Sun: <time dateTime="10:00">9am</time> - <time dateTime="18:00">7pm</time>
-        </h4>
-        {/* <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes avaliable at anytime</h4> */}
+      {/* Overlay Box with Responsive Alignment */}
+      <div className="position-absolute w-100 mt-sm-5 mt-0 h-100 d-flex align-items-center justify-content-center justify-content-md-end pe-md-5">
+        <div className="text-center bg-white text-dark px-5 py-4 rounded shadow-lg opening-box animate-opening">
+          <h1 id="opening-hours-heading" className="fw-bold fs-3 mb-3" itemProp="name">
+            OPENING HOURS
+          </h1>
+          <h4 className="mb-3" itemProp="opens">
+            Mon - Sun: <time dateTime="10:00">9am</time> - <time dateTime="18:00">7pm</time>
+          </h4>
+          {/* <h4 className="mb-0 text-dark fw-semibold" itemProp="closes">All E-bikes available at anytime</h4> */}
+        </div>
       </div>
     </motion.section>
   );

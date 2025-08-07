@@ -95,8 +95,8 @@
 "use client";
 import Head from 'next/head';
 import Image from 'next/image';
-import aboutImg from '../../../public/images/togethering-cycling.jpg'; 
-import aboutImg1 from '../../../public/images/ridinghapply.jpg'; 
+import aboutImg from '../../../public/images/Latest-admin-image.jpg'; 
+import aboutImg1 from '../../../public/images/Latest-admin-cycles-images-size.jpg'; 
 import aboutthree from '../../../public/images/about-image.jpg';
 import '../styles/About.css';
 import Header from '../components/Header';
@@ -130,7 +130,7 @@ export default function About() {
                 alt="About EBIKE100"
                 className='ovalImage'
                 width={500}
-                height={400}
+                height={500}
               />
             </div>
             <div className="col-md-6">

@@ -64,6 +64,12 @@
   padding: 6px;
   transition: border 0.3s ease;
 }
+.only-mobile-center{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 .description-section {
@@ -135,7 +141,7 @@
 }
 
 .info-header {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   font-weight: 600;
   margin-bottom: 15px;
   color: rgb(247, 147, 30);
@@ -174,4 +180,13 @@
 
 .thumb.active {
   border-color: orange;
+}
+
+.promotion-section {
+  background-image: url('../../../public/images/multiple-cycle-latest.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
 }
