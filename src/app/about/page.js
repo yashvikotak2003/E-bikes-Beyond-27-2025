@@ -155,7 +155,7 @@ export default function About() {
                 alt="About EBIKE100"
                 className='ovalImage'
                 width={500}
-                height={400}
+                height={500}
               />
             </div>
           </div>
