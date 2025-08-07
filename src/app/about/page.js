@@ -120,7 +120,7 @@ export default function About() {
       {pathname !== "/" && <Header />}
 
       <section className='aboutSection mb-5'>
-        <h1 className='text-center' style={{marginBottom:'60px',color:'#f7931e',marginTop:'60px'}}>About Us</h1>
+        <h1 className='text-center' style={{marginBottom:'40px',color:'#f7931e',marginTop:'40px'}}>About Us</h1>
         <div className="container px-3 px-sm-0">
           {/* Section 1 */}
           <div className="row align-items-center">
