@@ -290,7 +290,8 @@ of the mishap.</li>
 </li>
             <li className="list-group-item"><strong>3.</strong> GPS Tracker.</li>
             <li className="list-group-item"><strong>4.</strong> Bike Lock.</li>
-<li className="list-group-item"><strong>5.</strong> Battery Lock & Charger.</li>
+<li className="list-group-item"><strong>5.</strong> Battery Lock</li>
+<li className="list-group-item"><strong>6.</strong>Charger</li>
           </ul>
         </div>
       </section>
@@ -311,7 +312,7 @@ of the mishap.</li>
                 <div className="card-body text-center">
                   <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 6-8h</h5>
                   <p>Battery 48V 50A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$60 AUD</span> per week</p>
-                  <small className="text-muted">Battery hours 6-8 hrs.</small>
+                  <p className="text-muted">Battery hours 6-8 hrs.</p>
                 </div>
               </div>
             </div>
@@ -324,14 +325,14 @@ of the mishap.</li>
                   <p>Battery 48V 70A – <span className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="offers" itemScope itemType="https://schema.org/Offer">
                     <span itemProp="priceCurrency" content="USD" />$<span itemProp="price">65 AUD</span> 
                   </span> per week</p>
-                  <small className="text-muted" itemProp="description">Battery hours 8-10 hrs.</small>
+                  <p className="text-muted" itemProp="description">Battery hours 8-10 hrs.</p>
                 </div>
               </div>
             </div>
 
             <div className="col-md-4" itemScope itemType="https://schema.org/Product">
               <div className="card border-0 shadow-sm h-100">
-                <img src="/images/Latest-Change-Angle-Red-Cycle-latest.png" alt="Ebike100 rental" className="card-img-top" height={'270px'} width={'350px'} loading="lazy" itemProp="image" />
+                <img src="/images/Latest-Change-Angle-Red-Cycle-latest.png" alt="Ebike100 rental" className="card-img-top product-image" loading="lazy" itemProp="image" />
                 <div className="card-body text-center">
                   <h5 className="fw-bold" style={{color:'rgb(255, 107, 0)'}} itemProp="name">E-bike 10-12h</h5>
                   <p>Battery 48V 80A – <span style={{color:'rgb(255, 107, 0)'}} className="fw-bold">$70 AUD</span> per week</p>
