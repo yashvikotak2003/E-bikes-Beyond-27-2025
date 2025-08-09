@@ -274,8 +274,7 @@ wear and tear excluded).
 the battery. This amount is payable over a period of two (2) weeks following the occurrence
 of the mishap.</li>
 <li className="list-group-item"><strong>5.</strong> A minimum of 7 days notice is required prior to the scheduled return of the bike.</li>
-<li className="list-group-item"><strong>6.</strong> The renter is responsible for any misplaced, lost, or unlocked equipment and accessories.
-.</li>
+<li className="list-group-item"><strong>6.</strong> The renter is responsible for any misplaced, lost, or unlocked equipment and accessories.</li>
           </ul>
         </div>
       </section>
@@ -284,12 +283,12 @@ of the mishap.</li>
         <div className="container">
           <h2 className="fw-bold mb-4" style={{color:'#f7931e'}}>Accessories Provided</h2>
           <ul className="list-group list-group-flush mb-4">
-            <li className="list-group-item"><strong>1.</strong> Helmet.
+            <li className="list-group-item"><strong>1.</strong> Helmet
 </li>
-            <li className="list-group-item"><strong>2.</strong> Delivery Bags.
+            <li className="list-group-item"><strong>2.</strong> Delivery Bags
 </li>
-            <li className="list-group-item"><strong>3.</strong> GPS Tracker.</li>
-            <li className="list-group-item"><strong>4.</strong> Bike Lock.</li>
+            <li className="list-group-item"><strong>3.</strong> GPS Tracker</li>
+            <li className="list-group-item"><strong>4.</strong> Bike Lock</li>
 <li className="list-group-item"><strong>5.</strong> Battery Lock</li>
 <li className="list-group-item"><strong>6.</strong>Charger</li>
           </ul>
