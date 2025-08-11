@@ -28,14 +28,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Beyond Bikes | Premium Electric Road Bikes Australia</title>
-        <meta name="description" content="Beyond Bikes offers premium electric road bikes in Australia. More mileage, more fun, and the best e-bikes for your adventures." />
+        <title>Ride | Electric Road Bikes</title>
+        <meta name="description" content="Explore premium electric road bikes. More mileage, more fun." />
+        <meta name="keywords" content="electric bikes, road bikes, e-bikes, shop, cycling, affordable e-bikes, buy electric bikes" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Ride | Electric Road Bikes" />
+        <meta property="og:description" content="Explore premium electric road bikes. More mileage, more fun." />
+        <meta property="og:image" content="https://yourdomain.com/images/set-e-bike.jpg" />
+        <meta property="og:url" content="https://yourdomain.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://yourdomain.com" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
       </Head>
-      <main>
-        <h1>Beyond Bikes – Premium Electric Road Bikes in Australia</h1>
-        <p>Your destination for high-quality, affordable electric road bikes. Ride further, ride faster, ride Beyond.</p>
-        {/* Other homepage content */}
-        <Header />
+      <Header />
       <Hero />
       {/* <Accessories /> */}
       <Product />
@@ -57,8 +63,6 @@ export default function Home() {
       {/* <RentalEbikes /> */}
       <Review />
       <Footer />
-      </main>
-      
     </>
   )
 }
