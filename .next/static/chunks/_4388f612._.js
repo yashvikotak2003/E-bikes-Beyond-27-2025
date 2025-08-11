@@ -4347,7 +4347,7 @@ function Contact() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("link", {
                         rel: "canonical",
-                        href: "https://yourdomain.com/contact"
+                        href: "https://beyondbikes.com.au/contact"
                     }, void 0, false, {
                         fileName: "[project]/src/app/contact/page.js",
                         lineNumber: 365,
@@ -4423,7 +4423,7 @@ function Contact() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 type: "hidden",
                                                 name: "_captcha",
-                                                value: "false"
+                                                value: "true"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
                                                 lineNumber: 388,
@@ -4441,7 +4441,7 @@ function Contact() {
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 type: "hidden",
                                                 name: "_next",
-                                                value: "https://yourdomain.com/thank-you"
+                                                value: "https://beyondbikes.com.au/thank-you"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/contact/page.js",
                                                 lineNumber: 390,
