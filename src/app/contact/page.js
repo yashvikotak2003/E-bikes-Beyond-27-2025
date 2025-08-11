@@ -381,6 +381,11 @@ export default function Contact() {
               Please be prepared to provide details about your possible issue including your bike model.
               The more information you can provide, the quicker our team can provide a solution.
             </p>
+<p style={{ fontSize: '12px', color: '#666', marginTop: '10px' }}>
+  This site is protected by reCAPTCHA and the Google{' '}
+  <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and{' '}
+  <a href="https://policies.google.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> apply.
+</p>
 
             {/* ✅ FORM: Using Formsubmit to send directly to Gmail */}
             <form className="contact-form" action="https://formsubmit.co/info.beyondbikes@gmail.com" method="POST">
