@@ -28,12 +28,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Beyond Bikes | Reliable Electric Bike Rentals Melbourne</title>
-        <meta name="description"
-          content="Beyond Bikes offers reliable and affordable electric bike rentals in Melbourne – ideal for commuters and delivery riders. Rent your e-bike today!"
-        />
+        <title>Beyond Bikes | Premium Electric Road Bikes Australia</title>
+        <meta name="description" content="Beyond Bikes offers premium electric road bikes in Australia. More mileage, more fun, and the best e-bikes for your adventures." />
       </Head>
-      <Header />
+      <main>
+        <h1>Beyond Bikes – Premium Electric Road Bikes in Australia</h1>
+        <p>Your destination for high-quality, affordable electric road bikes. Ride further, ride faster, ride Beyond.</p>
+        {/* Other homepage content */}
+        <Header />
       <Hero />
       {/* <Accessories /> */}
       <Product />
@@ -55,6 +57,8 @@ export default function Home() {
       {/* <RentalEbikes /> */}
       <Review />
       <Footer />
+      </main>
+      
     </>
   )
 }
