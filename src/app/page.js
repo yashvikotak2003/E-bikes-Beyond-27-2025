@@ -28,13 +28,14 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ride | Electric Road Bikes</title>
-        <meta name="description" content="Explore premium electric road bikes. More mileage, more fun." />
+        <title>BEYOND BIKES AU</title>
+        {/* <meta name="description" content="Explore premium electric road bikes. More mileage, more fun." /> */}
+        <meta name="description" content="Ride | Premium electric road bikes in Australia. Get more mileage, more fun, and top-quality e-bikes for road adventures." />
         <meta name="keywords" content="electric bikes, road bikes, e-bikes, shop, cycling, affordable e-bikes, buy electric bikes" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content="Ride | Electric Road Bikes" />
-        <meta property="og:description" content="Explore premium electric road bikes. More mileage, more fun." />
+        <meta property="og:title" content="BEYOND BIKES AU" />
+        <meta property="og:description" content="Ride | Premium electric road bikes in Australia. Get more mileage, more fun, and top-quality e-bikes for road adventures." />
         <meta property="og:image" content="https://yourdomain.com/images/set-e-bike.jpg" />
         <meta property="og:url" content="https://yourdomain.com" />
         <meta name="twitter:card" content="summary_large_image" />
