@@ -185,7 +185,7 @@ export default function Header() {
     ['/', 'Home'],
     ['/products', 'Products'],
     ['/rental', 'Rental'],
-    // ['/contact', 'Contact'],
+    ['/contact', 'Contact'],
     ['/about', 'About Us'],
     ['/basicknowledge', 'Privacy Policy'],
   ];

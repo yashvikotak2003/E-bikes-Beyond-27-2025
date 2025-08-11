@@ -214,7 +214,10 @@ function Header() {
             '/rental',
             'Rental'
         ],
-        // ['/contact', 'Contact'],
+        [
+            '/contact',
+            'Contact'
+        ],
         [
             '/about',
             'About Us'
