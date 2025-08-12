@@ -51,6 +51,7 @@ nav ul.nav li.nav-item a {
     box-shadow: none !important;
   }
 
+ 
   .custom-nav li.nav-item {
     padding: 0;
   }
@@ -70,6 +71,11 @@ nav ul.nav li.nav-item a {
     flex-direction: row;
   }
 
+   .set-logo-height {
+  height: 60px;
+  width: 80px;
+  cursor: pointer;
+}
   .menu-position {
     position: absolute;
     right: 0px;

@@ -234,7 +234,7 @@ export default function Header() {
       >
         <div className="container position-relative py-sm-3 py-1 d-flex justify-content-between align-items-center">
           <img
-            src="/images/Logo-for-ebike-beyond-bikes-removebg-preview.png"
+            src="/images/Latest-beyond-logo-12-08.png"
             alt="logo"
             className="set-logo-height"
             onClick={() => {

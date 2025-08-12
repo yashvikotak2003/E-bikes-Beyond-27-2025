@@ -362,7 +362,7 @@ export default function Contact() {
         <title>Contact Us | EBIKE100</title>
         <meta name="description" content="Contact EBIKE100 support team. We're ready to assist you with product issues, inquiries, and services." />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://beyondbikes.com.au/contact" />
+        <link rel="canonical" href="https://yourdomain.com/contact" />
       </Head>
 
       {/* ✅ Header will only render if NOT on home page */}
@@ -385,9 +385,9 @@ export default function Contact() {
             {/* ✅ FORM: Using Formsubmit to send directly to Gmail */}
             <form className="contact-form" action="https://formsubmit.co/info.beyondbikes@gmail.com" method="POST">
               {/* Hidden fields */}
-              <input type="hidden" name="_captcha" value="true" />
+              <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://beyondbikes.com.au/thank-you" />
+              <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
               <input type="hidden" name="_subject" value="New Contact Submission from Beyond Bikes" />
 
               <div className="row g-3 mb-3">
