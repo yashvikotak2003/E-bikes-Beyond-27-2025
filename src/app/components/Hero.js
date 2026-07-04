@@ -106,8 +106,8 @@ export default function Hero() {
 
       {/* ✅ Hero Section */}
       <section
-        className="d-flex position-relative responsive-bg text-white text-center text-md-start"
-        style={{ backgroundImage: `url(${images[currentImageIndex]});height:110vh` }}
+        className="d-flex position-relative responsive-bg text-white min-vh-100 text-center text-md-start"
+        style={{ backgroundImage: `url(${images[currentImageIndex]});`}}
         role="banner"
         aria-label="Electric bike rentals in Melbourne—quiet, powerful, and flexible hire"
       >
@@ -116,8 +116,8 @@ export default function Hero() {
         <Image
           src={images[currentImageIndex]}
           alt="Electric bike rentals in Melbourne - Beyond Bikes"
-          width={1920}
-          height={1080}
+          width={0}
+          height={0}
         
           priority
           style={{ display: "none" }}
