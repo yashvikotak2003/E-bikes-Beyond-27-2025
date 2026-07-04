@@ -92,6 +92,10 @@
 }
 /* dhfjehdj */
 
+.set-margin-top-mobile-hero{
+    margin-top: 50% !important;
+  }
+
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;

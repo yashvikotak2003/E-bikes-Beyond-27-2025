@@ -149,7 +149,7 @@ export default function Hero() {
         )}
 
         <div className="container position-relative z-2 mt-sm-5 mt-4 pt-5">
-          <div className="row mt-sm-0 mt-5">
+          <div className="row mt-sm-0 set-margin-top-mobile-hero">
             <div className="col-12 col-md-6">
               <h2
                 className="display-5 mb-4"

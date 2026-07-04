@@ -23,6 +23,7 @@ export default function ProductPage({ params }) {
       <Head>
         <title>{product.name} | Beyond Bikes Melbourne</title>
         <meta name="description" content={product.shortDescription} />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         {/* Bootstrap 5 CSS via CDN */}
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -43,11 +44,16 @@ export default function ProductPage({ params }) {
           --text-light: #e2f0e7;
         }
 
+        html {
+          overflow-x: hidden;
+        }
+
         body {
           background-color: var(--bg-dark);
           color: var(--text-light);
           font-family: "Inter", sans-serif;
           overflow-x: hidden;
+          width: 100%;
         }
 
         /* Ambient Glow Vectors */
@@ -100,8 +106,11 @@ export default function ProductPage({ params }) {
           transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        .img-display-box:hover img {
-          transform: scale(1.05) rotate(-0.5deg);
+        /* Disable hover-zoom on touch devices so it doesn't stick after tap */
+        @media (hover: hover) {
+          .img-display-box:hover img {
+            transform: scale(1.05) rotate(-0.5deg);
+          }
         }
 
         /* Dynamic Micro-Sliders / Thumbnails */
@@ -109,8 +118,10 @@ export default function ProductPage({ params }) {
           display: flex;
           gap: 12px;
           overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
           white-space: nowrap;
           padding-bottom: 8px;
+          scroll-snap-type: x proximity;
         }
 
         .thumb-scroll-row::-webkit-scrollbar {
@@ -131,11 +142,14 @@ export default function ProductPage({ params }) {
           padding: 4px;
           cursor: pointer;
           transition: all 0.25s ease;
+          scroll-snap-align: start;
         }
 
-        .thumb-wrapper-btn:hover {
-          transform: translateY(-3px);
-          border-color: rgba(74, 222, 128, 0.5);
+        @media (hover: hover) {
+          .thumb-wrapper-btn:hover {
+            transform: translateY(-3px);
+            border-color: rgba(74, 222, 128, 0.5);
+          }
         }
 
         .thumb-wrapper-btn.active {
@@ -154,11 +168,13 @@ export default function ProductPage({ params }) {
           border-bottom: none;
         }
 
-        .spec-item-row:hover {
-          background: rgba(74, 222, 128, 0.03);
-          padding-left: 6px;
-          padding-right: 6px;
-          border-radius: 8px;
+        @media (hover: hover) {
+          .spec-item-row:hover {
+            background: rgba(74, 222, 128, 0.03);
+            padding-left: 6px;
+            padding-right: 6px;
+            border-radius: 8px;
+          }
         }
 
         /* Premium Buttons */
@@ -171,10 +187,12 @@ export default function ProductPage({ params }) {
           transition: all 0.3s ease;
         }
 
-        .btn-gradient-primary:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 10px 20px rgba(74, 222, 128, 0.25);
-          color: #050b08;
+        @media (hover: hover) {
+          .btn-gradient-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(74, 222, 128, 0.25);
+            color: #050b08;
+          }
         }
 
         .btn-outline-glass {
@@ -185,11 +203,132 @@ export default function ProductPage({ params }) {
           transition: all 0.3s ease;
         }
 
-        .btn-outline-glass:hover {
-          background: rgba(74, 222, 128, 0.05);
-          border-color: var(--accent-green);
-          color: var(--accent-green);
-          transform: translateY(-2px);
+        @media (hover: hover) {
+          .btn-outline-glass:hover {
+            background: rgba(74, 222, 128, 0.05);
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+            transform: translateY(-2px);
+          }
+        }
+
+        /* Tap feedback for touch devices (replaces hover states) */
+        .btn-gradient-primary:active,
+        .btn-outline-glass:active {
+          transform: scale(0.98);
+        }
+
+        .thumb-wrapper-btn:active {
+          transform: scale(0.95);
+        }
+
+        /* ============================= */
+        /* Tablet & below (<= 991.98px)  */
+        /* ============================= */
+        @media (max-width: 991.98px) {
+          .sticky-panel {
+            position: static;
+          }
+          .img-display-box {
+            min-height: 320px;
+          }
+        }
+
+        /* ============================= */
+        /* Small tablets / large phones  */
+        /* (<= 767.98px)                 */
+        /* ============================= */
+        @media (max-width: 767.98px) {
+          .custom-card {
+            border-radius: 16px;
+          }
+
+          .img-display-box {
+            min-height: 260px;
+          }
+
+          .thumb-wrapper-btn {
+            flex: 0 0 72px;
+            height: 72px;
+          }
+
+          h1.display-5 {
+            font-size: 1.85rem;
+          }
+        }
+
+        /* ============================= */
+        /* Phones (<= 575.98px)          */
+        /* ============================= */
+        @media (max-width: 575.98px) {
+          .container {
+            padding-left: 16px;
+            padding-right: 16px;
+          }
+
+          .custom-card {
+            border-radius: 14px;
+          }
+
+          .img-display-box {
+            min-height: 220px;
+            border-radius: 12px;
+          }
+
+          .thumb-wrapper-btn {
+            flex: 0 0 64px;
+            height: 64px;
+            border-radius: 10px;
+          }
+
+          h1.display-5 {
+            font-size: 1.55rem;
+            line-height: 1.25;
+          }
+
+          .fs-2 {
+            font-size: 1.5rem !important;
+          }
+
+          /* Stack price + save badge instead of squeezing them side by side */
+          .price-action-deck {
+            flex-direction: column;
+            align-items: flex-start !important;
+            gap: 12px !important;
+          }
+
+          .price-action-deck .save-badge {
+            align-self: flex-start;
+          }
+
+          /* Spec rows: keep label/value on one line but shrink text a touch */
+          .spec-item-row span {
+            font-size: 13px !important;
+          }
+
+          /* Full-width stacked CTA buttons already handled by flex-column flex-sm-row,
+             just tighten the vertical padding a bit on very small screens */
+          .btn-gradient-primary,
+          .btn-outline-glass {
+            padding-top: 0.85rem !important;
+            padding-bottom: 0.85rem !important;
+          }
+        }
+
+        /* Extra small phones (<= 380px) */
+        @media (max-width: 380px) {
+          .img-display-box {
+            min-height: 190px;
+          }
+
+          .thumb-wrapper-btn {
+            flex: 0 0 56px;
+            height: 56px;
+          }
+
+          h1.display-5 {
+            font-size: 1.35rem;
+          }
         }
 
         /* Responsive Fixes */
@@ -203,7 +342,7 @@ export default function ProductPage({ params }) {
         }
       `}</style>
 
-      <div className="position-relative min-vh-screen">
+      <div className="position-relative min-vh-screen overflow-hidden">
         <div className="ambient-glow-1" />
 
         <Header />
@@ -226,7 +365,7 @@ export default function ProductPage({ params }) {
             <div className="col-12 col-lg-7">
               <div className="sticky-panel d-flex flex-column gap-3">
                 <div className="custom-card p-3 p-sm-4">
-                  <div className="img-display-box d-flex align-items-center justify-content-center p-3">
+                  <div className="img-display-box d-flex align-items-center justify-content-center p-2 p-sm-3">
                     <Image
                       src={activeImg}
                       alt={product.name}
@@ -285,10 +424,10 @@ export default function ProductPage({ params }) {
                 </div>
 
                 {/* Smart Pricing Action Deck */}
-                <div className="custom-card p-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
+                <div className="custom-card price-action-deck p-3 p-sm-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
                   <div>
                     <small className="text-uppercase tracking-wider d-block mb-1" style={{ color: "var(--text-muted)", fontSize: "11px" }}>Current Investment</small>
-                    <div className="d-flex align-items-baseline gap-3">
+                    <div className="d-flex align-items-baseline gap-3 flex-wrap">
                       <span className="font-display fs-2 fw-bold" style={{ color: "var(--accent-green)" }}>
                         A${product.price.toLocaleString()}
                       </span>
@@ -301,14 +440,14 @@ export default function ProductPage({ params }) {
                   </div>
 
                   {product.oldPrice && (
-                    <span className="badge rounded-pill px-3 py-2 btn-gradient-primary text-dark fw-bold" style={{ fontSize: "12px" }}>
+                    <span className="save-badge badge rounded-pill px-3 py-2 btn-gradient-primary text-dark fw-bold" style={{ fontSize: "12px" }}>
                       Save A${(product.oldPrice - product.price).toLocaleString()}
                     </span>
                   )}
                 </div>
 
                 {/* Technical Metric Specifications Module Data Block */}
-                <div className="custom-card p-4 position-relative overflow-hidden">
+                <div className="custom-card p-3 p-sm-4 position-relative overflow-hidden">
                   <div className="position-absolute bg-success top-0 start-0 bottom-0" style={{ width: "3px", background: "linear-gradient(to bottom, var(--accent-green), transparent)" }} />
                   <h2 className="text-uppercase tracking-widest mb-3" style={{ color: "var(--text-muted)", fontSize: "12px", fontWeight: "700" }}>
                     Technical Specifications
