@@ -420,11 +420,11 @@ export default function Contact() {
       <main>
         <section className="container px-sm-0 px-3 py-5">
           <h1 className='text-center fw-bold pb-4 heading-underline-contact-main' style={{color: '#1a3b19',fontFamily:'system-ui'}}>Contact Beyond Bikes</h1>
-          <div className="row g-5 align-items-start">
+          <div className="row align-items-start">
 
             {/* Form Section */}
-            <div className="col-lg-6" itemScope itemType="https://schema.org/ContactPage">
-              <h2 className="fw-bold mb-3 mt-3" style={{ color: '#1a3b19',fontFamily:'system-ui' }} itemProp="name">Reach Out & Get in Touch</h2>
+            <div className="col-lg-6 mx-auto" itemScope itemType="https://schema.org/ContactPage">
+              <h2 className="fw-bold mb-3 mt-5" style={{ color: '#1a3b19',fontFamily:'system-ui' }} itemProp="name">Reach Out & Get in Touch</h2>
               <p className="text-dark mb-4" itemProp="description">
                 Provide details about your inquiry or issue including your bike model. Our team at Beyond Bikes will respond promptly.
               </p>
@@ -539,32 +539,8 @@ export default function Contact() {
 
             {/* Info Section */}
             
-            <div className="col-lg-6 d-flex justify-content-center">
-              {/* <address className="bg-light rounded p-4" itemScope itemType="https://schema.org/PostalAddress">
-                <div className="mb-4">
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Address</h3>
-                  <p className="mb-0" itemProp="addressCountry">576 North Rd, Ormond VIC 3204, Australia</p>
-                 
-                </div>
-                <hr />
-                <div className="mb-4">
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Phone</h3>
-                  <p className="mb-0" itemProp="telephone">+61 422 032 961</p>
-                </div>
-                <hr />
-                <div className="mb-4">
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Email</h3>
-                  <p className="mb-0" itemProp="email">info.beyondbikes@gmail.com</p>
-                </div>
-                <hr />
-                <div>
-                  <h3 className="text-uppercase fs-5 fw-bold" style={{ color: '#1a3b19' }}>Hours</h3>
-                  <div className="d-flex py-1">
-                    <span className='me-2'>Monday - Saturday :</span> <span>9am - 7pm</span>
-                  </div>
-                  <span className='me-2'>Sunday :</span> <span>11am - 4pm</span>
-                </div>
-              </address> */}
+            {/* <div className="col-lg-6 d-flex justify-content-center">
+              
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.120442377545!2d145.0406816!3d-37.904247399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad669652d799b25%3A0xab28d496d1fa88c7!2s576%20North%20Rd%2C%20Ormond%20VIC%203204%2C%20Australia!5e0!3m2!1sen!2sin!4v1756139787406!5m2!1sen!2sin"
                 allowFullScreen={true}
@@ -584,7 +560,7 @@ export default function Contact() {
                   Google Maps
                 </a>
               </noscript>
-            </div>
+            </div> */}
 </div>
           
         </section>

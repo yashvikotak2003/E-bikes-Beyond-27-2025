@@ -209,6 +209,7 @@ export default function ContactPage() {
               </a>
             </div>
 <div className="col-md-6 d-flex justify-content-center mt-5 mt-sm-0">
+             <div className="map-wrapper">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.120442377545!2d145.0406816!3d-37.904247399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad669652d799b25%3A0xab28d496d1fa88c7!2s576%20North%20Rd%2C%20Ormond%20VIC%203204%2C%20Australia!5e0!3m2!1sen!2sin!4v1756139787406!5m2!1sen!2sin"
                 allowFullScreen={true}
@@ -218,6 +219,7 @@ export default function ContactPage() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="responsive-map"
               ></iframe>
+              </div>
               <noscript>
                 View our location on{' '}
                 <a

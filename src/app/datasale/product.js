@@ -5,11 +5,11 @@ export const products = [
 
   name: "Linkseride Cargo Fat Tyre Electric Bike",
 
-  image: "/images/Sale-E-bike-2-Latest-04-06.png",
+  image: "/images/Green-Bike-Left-Trans-15-6.png",
 
   gallery: [
     "/images/Green-Bike-Front-Trans.png",
-    "/images/Green-Bike-Left-Trans-15-6.png",
+    "/images/Sale-E-bike-2-Latest-04-06.png",
     "/images/Green-Bike-Right-Trans.png",
   ],
 
@@ -51,12 +51,12 @@ export const products = [
 
   name: "Linkseride OTANGO Retro Fat Tyre Electric Bike",
 
-  image: "/images/Sale-E-bike-3.png",
+  image: "/images/White-Cycle-Left-Trans.png",
 
   gallery: [
     "/images/White-Cycle-Front-Trans.png",
     "/images/White-Cycle-Back-Trans.png",
-    "/images/White-Cycle-Left-Trans.png",
+    "/images/Sale-E-bike-3.png",
   ],
 
   shortDescription:
@@ -92,11 +92,11 @@ export const products = [
 
   name: "V20 Cargo Fat Tyre Electric Bike",
 
-  image: "/images/Sale-E-bike-4.png",
+  image: "/images/Black-2-Left-04-07.png",
 
   gallery: [
     "/images/Black-2-Front-04-07.png",
-    "/images/Black-2-Left-04-07.png",
+    "/images/Sale-E-bike-4.png",
     "/images/Black-2-Back-04-07.png",
   ],
 
@@ -139,12 +139,12 @@ export const products = [
 
   name: "HIJOE Black Cat Dual Motor Electric Bike",
 
-  image: "/images/Sale-E-bike-5.png",
+  image: "/images/Black-Bike-left-04-07.png",
 
   gallery: [
     "/images/Black-Bike-back.png",
-    "/images/Black-Bike-Front-04-07.png",
-    "/images/Black-Bike-left-04-07.png",
+    "/images/Black-Bike-front-04-07.png",
+    "/images/Sale-E-bike-5.png",
   ],
 
   shortDescription:
@@ -207,11 +207,11 @@ export const products = [
 
   name: "Linkseride Moped-Style Fat Tyre Electric Bike",
 
-  image: "/images/Sale-E-bike-6.png",
+  image: "/images/Black-3-Left-04-07.png",
 
   gallery: [
     "/images/Black-3-Front-04-07.png",
-    "/images/Black-3-Left-04-07.png",
+    "/images/Sale-E-bike-6.png",
     "/images/Black-3-Back-04-07.png",
   ],
 

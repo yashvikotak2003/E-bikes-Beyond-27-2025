@@ -243,3 +243,22 @@
     font-weight: 600;
     text-decoration: underline;
 }
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 566px; /* matches your box in the screenshot */
+  aspect-ratio: 1 / 1; /* or 4/3, 16/9 — pick what matches your design */
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); */
+}
+
+.responsive-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

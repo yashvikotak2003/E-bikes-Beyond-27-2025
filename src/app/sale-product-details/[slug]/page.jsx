@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import { products } from "@/app/datasale/product";
+import Link from "next/link";
 
 export default function ProductPage({ params }) {
   const product = products.find((p) => p.slug === params.slug);
@@ -353,8 +354,8 @@ export default function ProductPage({ params }) {
           <nav className="d-flex align-items-center gap-2 mb-4 mb-md-5 text-nowrap overflow-x-auto pb-2" style={{ fontSize: "14px" }}>
             <a href="/" className="text-decoration-none" style={{ color: "var(--text-muted)" }}>Home</a>
             <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
-            <a href="/products" className="text-decoration-none" style={{ color: "var(--text-muted)" }}>E-Bikes</a>
-            <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span>
+            {/* <a href="/products" className="text-decoration-none" style={{ color: "var(--text-muted)" }}>E-Bikes</a>
+            <span style={{ color: "rgba(255,255,255,0.2)" }}>/</span> */}
             <span className="text-white font-medium">{product.name}</span>
           </nav>
 
@@ -471,12 +472,12 @@ export default function ProductPage({ params }) {
 
                 {/* Primary Action Button Grid Panel Layout */}
                 <div className="d-flex flex-column flex-sm-row gap-3 pt-2">
-                  <button className="btn btn-gradient-primary flex-grow-1 py-3 rounded-3">
+                  {/* <button className="btn btn-gradient-primary flex-grow-1 py-3 rounded-3">
                     Buy Now
-                  </button>
-                  <button className="btn btn-outline-glass flex-grow-1 py-3 rounded-3">
-                    Enquire Now
-                  </button>
+                  </button> */}
+                  <Link href="/contact" className="btn btn-outline-glass flex-grow-1 py-3 rounded-3 text-center text-decoration-none">
+  Enquire Now
+</Link>
                 </div>
 
               </div>
