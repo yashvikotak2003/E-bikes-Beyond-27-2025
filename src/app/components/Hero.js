@@ -88,7 +88,7 @@ export default function Hero() {
               telephone: "+61422032961",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "576 North Rd, Ormond VIC 3204, Australia",
+                streetAddress: "768 Glen Huntly Rd, Caulfield South VIC 3162, Australia",
                 addressLocality: "Melbourne",
                 addressRegion: "VIC",
                 postalCode: "3162",

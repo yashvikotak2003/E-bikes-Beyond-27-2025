@@ -521,7 +521,7 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6">
               <h6 className="fw-bold">Contact Us</h6>
               <address className="mt-3">
-                <p><i className="bi bi-geo-alt me-2"></i> 576 North Rd, Ormond VIC 3204, Australia</p>
+                <p><i className="bi bi-geo-alt me-2"></i> 768 Glen Huntly Rd, Caulfield South VIC 3162, Australia</p>
                 <p><i className="bi bi-telephone me-2"></i>
                   <a href="tel:+61 422 032 961" className="text-white text-decoration-none">
                     +61 422 032 961

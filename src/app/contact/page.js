@@ -403,7 +403,7 @@ export default function Contact() {
           },
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "576 North Rd, Ormond VIC 3204, Australia",
+            "streetAddress": "768 Glen Huntly Rd, Caulfield South VIC 3162, Australia",
             "addressLocality": "Ormond VIC 3204",
             "addressCountry": "Australia"
           },
@@ -584,7 +584,7 @@ export default function Contact() {
           </div>
           <address className="mb-0 text-center">
             <strong>Address:</strong><br />
-            576 North Rd, Ormond VIC 3204, Australia
+            768 Glen Huntly Rd, Caulfield South VIC 3162, Australia
           </address>
         </div>
       </div>

@@ -210,15 +210,7 @@ export default function ContactPage() {
             </div>
 <div className="col-md-6 d-flex justify-content-center mt-5 mt-sm-0">
              <div className="map-wrapper">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.120442377545!2d145.0406816!3d-37.904247399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad669652d799b25%3A0xab28d496d1fa88c7!2s576%20North%20Rd%2C%20Ormond%20VIC%203204%2C%20Australia!5e0!3m2!1sen!2sin!4v1756139787406!5m2!1sen!2sin"
-                allowFullScreen={true}
-                loading="lazy"
-                title="Beyond Bikes Location Map"
-                aria-label="Beyond Bikes Store Location on Google Maps"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="responsive-map"
-              ></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3148.858128288743!2d145.0213535!3d-37.88700039999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xad2bb1333866ab51%3A0xa4b86ef9fc66b952!2sBeyond%20Bikes!5e0!3m2!1sen!2sin!4v1788976484314!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" className='responsive-map'></iframe>
               </div>
               <noscript>
                 View our location on{' '}
