@@ -1,50 +1,50 @@
 export const products = [
-  {
-  id: 1,
-  slug: "linkseride-cargo-fat-tyre-electric-bike",
+//   {
+//   id: 1,
+//   slug: "linkseride-cargo-fat-tyre-electric-bike",
 
-  name: "Linkseride Cargo Fat Tyre Electric Bike",
+//   name: "Linkseride Cargo Fat Tyre Electric Bike",
 
-  image: "/images/Green-Bike-Left-Trans-15-6.png",
+//   image: "/images/Green-Bike-Left-Trans-15-6.png",
 
-  gallery: [
-    "/images/Green-Bike-Front-Trans.png",
-    "/images/Sale-E-bike-2-Latest-04-06.png",
-    "/images/Green-Bike-Right-Trans.png",
-  ],
+//   gallery: [
+//     "/images/Green-Bike-Front-Trans.png",
+//     "/images/Sale-E-bike-2-Latest-04-06.png",
+//     "/images/Green-Bike-Right-Trans.png",
+//   ],
 
-  shortDescription:
-    "A practical cargo-style electric bike designed for everyday riding and carrying personal belongings.",
+//   shortDescription:
+//     "A practical cargo-style electric bike designed for everyday riding and carrying personal belongings.",
 
-  description:
-    "The Linkseride Cargo Fat Tyre Electric Bike features a powerful 750W rear hub motor, a high-capacity 48V 60Ah frame-mounted lithium battery, and an integrated cargo storage system. Built with wide fat tyres, dual-crown suspension, and front and rear disc brakes, it delivers comfort, stability, and utility for daily use.",
+//   description:
+//     "The Linkseride Cargo Fat Tyre Electric Bike features a powerful 750W rear hub motor, a high-capacity 48V 60Ah frame-mounted lithium battery, and an integrated cargo storage system. Built with wide fat tyres, dual-crown suspension, and front and rear disc brakes, it delivers comfort, stability, and utility for daily use.",
 
-  price: 2100,
-  oldPrice: 2400,
+//   price: 2100,
+//   oldPrice: 2400,
 
-  tag: "New Arrival",
+//   tag: "New Arrival",
 
-  specifications: {
-    motor: "750W rear hub motor",
+//   specifications: {
+//     motor: "750W rear hub motor",
 
-    battery: "48V 60Ah frame-mounted lithium battery",
+//     battery: "48V 60Ah frame-mounted lithium battery",
 
-    tyres: '26" × 4.0" fat tyres',
+//     tyres: '26" × 4.0" fat tyres',
 
-    suspension: "Dual-crown suspension fork",
+//     suspension: "Dual-crown suspension fork",
 
-    brakes: "Front and rear disc brakes",
+//     brakes: "Front and rear disc brakes",
 
-    storage: "Integrated cargo storage",
+//     storage: "Integrated cargo storage",
 
-    lighting: "LED headlight",
+//     lighting: "LED headlight",
 
-    accessories: "Mudguards included",
+//     accessories: "Mudguards included",
 
-    useCase:
-      "Suitable for everyday riding and carrying personal belongings",
-  },
-},
+//     useCase:
+//       "Suitable for everyday riding and carrying personal belongings",
+//   },
+// },
   {
   id: 2,
   slug: "linkseride-otango-retro-fat-tyre-electric-bike",
@@ -86,52 +86,52 @@ export const products = [
     included: "One complete electric bicycle",
   },
 },
-  {
-  id: 3,
-  slug: "v20-cargo-fat-tyre-electric-bike",
+//   {
+//   id: 3,
+//   slug: "v20-cargo-fat-tyre-electric-bike",
 
-  name: "V20 Cargo Fat Tyre Electric Bike",
+//   name: "V20 Cargo Fat Tyre Electric Bike",
 
-  image: "/images/Black-2-Left-04-07.png",
+//   image: "/images/Black-2-Left-04-07.png",
 
-  gallery: [
-    "/images/Black-2-Front-04-07.png",
-    "/images/Sale-E-bike-4.png",
-    "/images/Black-2-Back-04-07.png",
-  ],
+//   gallery: [
+//     "/images/Black-2-Front-04-07.png",
+//     "/images/Sale-E-bike-4.png",
+//     "/images/Black-2-Back-04-07.png",
+//   ],
 
-  shortDescription:
-    "A versatile cargo e-bike featuring a 250W rear hub motor, removable battery, hydraulic disc brakes, and long-range pedal assist.",
+//   shortDescription:
+//     "A versatile cargo e-bike featuring a 250W rear hub motor, removable battery, hydraulic disc brakes, and long-range pedal assist.",
 
-  description:
-    "The V20 Cargo Electric Bike combines utility and comfort with a 250W rear hub motor, Shimano 7-speed gearing, and a removable 48V 15.6Ah lithium-ion battery. Built with puncture-resistant fat tyres, front and rear suspension, and a high payload capacity, it is ideal for commuting, recreational riding, and cargo transport.",
+//   description:
+//     "The V20 Cargo Electric Bike combines utility and comfort with a 250W rear hub motor, Shimano 7-speed gearing, and a removable 48V 15.6Ah lithium-ion battery. Built with puncture-resistant fat tyres, front and rear suspension, and a high payload capacity, it is ideal for commuting, recreational riding, and cargo transport.",
 
-  price: 1450,
-  oldPrice: 1650,
+//   price: 1450,
+//   oldPrice: 1650,
 
-  tag: "Hot Deal",
+//   tag: "Hot Deal",
 
-  specifications: {
-    motor: "250W rear hub motor",
+//   specifications: {
+//     motor: "250W rear hub motor",
 
-    battery: "48V 15.6Ah removable lithium-ion battery",
+//     battery: "48V 15.6Ah removable lithium-ion battery",
 
-    gears: "Shimano 7-speed gearing",
+//     gears: "Shimano 7-speed gearing",
 
-    tyres: '20" × 4.0" puncture-resistant fat tyres',
+//     tyres: '20" × 4.0" puncture-resistant fat tyres',
 
-    brakes: "Hydraulic disc brakes",
+//     brakes: "Hydraulic disc brakes",
 
-    suspension: "Front and rear suspension",
+//     suspension: "Front and rear suspension",
 
-    range: "Up to 110 km using pedal assist",
+//     range: "Up to 110 km using pedal assist",
 
-    payloadCapacity: "Maximum load capacity of 150 kg",
+//     payloadCapacity: "Maximum load capacity of 150 kg",
 
-    useCase:
-      "Suitable for commuting, recreational riding and cargo transport",
-  },
-},
+//     useCase:
+//       "Suitable for commuting, recreational riding and cargo transport",
+//   },
+// },
 
 {
   id: 4,
